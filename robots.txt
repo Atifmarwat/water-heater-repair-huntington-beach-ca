@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://waterheaterrepairhuntingtonbeachca.com/sitemap.xml
