@@ -1475,6 +1475,16 @@
     });
   }
 
+  // Mobile submenu toggle
+document.querySelectorAll('[data-mobile-submenu-toggle]').forEach(btn => {
+  btn.addEventListener('click', function() {
+    const submenu = this.nextElementSibling;
+    submenu.classList.toggle('hidden');
+    const icon = this.querySelector('svg');
+    icon.style.transform = submenu.classList.contains('hidden') ? 'rotate(0deg)' : 'rotate(180deg)';
+  });
+});
+
   // Auto year
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
