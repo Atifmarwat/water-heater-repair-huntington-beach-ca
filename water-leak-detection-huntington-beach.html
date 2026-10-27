@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0f2b4a" />
+  <title>Water Leak Detection in Huntington Beach, CA | Professional Plumbing</title>
+  <meta name="description" content="Professional water leak detection in Huntington Beach, CA. Slab leaks, hidden pipe leaks & underground water line investigation. Call (714) 439-5780 today!" />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&family=Poppins:wght@500;600;700;800;900&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: { DEFAULT: "#0f2b4a", 800: "#1a3a5c", 700: "#234b6e" },
+            primary: { DEFAULT: "#1a5f8a", 600: "#1473a8", 500: "#1a8bc4" },
+            accent: { DEFAULT: "#d97706", dark: "#b45309", light: "#f59e0b" },
+            teal: { DEFAULT: "#0d9488", 500: "#14b8a6" }
+          },
+          fontFamily: {
+            sans: ["Inter", "system-ui", "sans-serif"],
+            display: ["Plus Jakarta Sans", "Inter", "sans-serif"]
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
+    .reveal.in { opacity: 1; transform: translateY(0); }
+    .eyebrow-line::after {
+      content: ""; display: block; width: 48px; height: 3px;
+      background: linear-gradient(90deg, #d97706, #14b8a6);
+      margin: 12px auto 0; border-radius: 2px;
+    }
+
+    /* ============================================
+       CUSTOM STYLES FOR WATER LEAK DETECTION SECTIONS
+       ============================================ */
+    .npser-wrap { max-width: 1180px; margin: 0 auto; width: 100%; }
+    .npser-section { padding: 80px 30px; font-family: 'Inter', sans-serif; }
+    
+    .npser-h2 {
+      font-family: 'Poppins', sans-serif; font-size: 40px; font-weight: 700;
+      line-height: 1.25; letter-spacing: -0.6px; margin: 0 0 14px 0; position: relative;
+    }
+    .npser-h2:after {
+      content: ""; display: block; width: 60px; height: 4px;
+      background: #FF6B35; border-radius: 2px; margin-top: 14px;
+    }
+    .npser-h2-dark { color: #1A2B4A; }
+    .npser-h2-orange { color: #FF6B35; }
+    .npser-h2-orange:after { background: #FF6B35; }
+
+    .npser-h2-sub {
+      font-size: 26px !important; font-weight: 600 !important; color: #1A2B4A !important;
+      margin: 32px 0 10px 0 !important; padding-left: 16px; border-left: 5px solid #FF6B35;
+      line-height: 1.3; letter-spacing: -0.3px;
+    }
+    .npser-h2-sub:after { display: none !important; }
+
+    .npser-card-h2 {
+      font-family: 'Poppins', sans-serif; font-size: 22px; font-weight: 600;
+      color: #1A2B4A; margin: 0 0 12px 0; line-height: 1.3; letter-spacing: -0.2px;
+    }
+
+    .npser-faq-h2 {
+      font-family: 'Poppins', sans-serif; font-size: 21px; font-weight: 600;
+      color: #1A2B4A; margin: 0 0 10px 0; line-height: 1.4; position: relative; padding-left: 40px;
+    }
+    .npser-faq-h2:before {
+      content: "?"; position: absolute; left: 0; top: 50%; transform: translateY(-50%);
+      width: 28px; height: 28px; background: linear-gradient(135deg, #FF6B35 0%, #E85A28 100%);
+      color: #ffffff; border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      font-size: 16px; font-weight: 700; font-family: 'Poppins', sans-serif;
+      box-shadow: 0 3px 10px rgba(255,107,53,0.4);
+    }
+
+    .npser-p {
+      font-family: 'Inter', sans-serif; font-size: 18px; line-height: 1.8;
+      margin: 0 0 16px 0; color: #334155; font-weight: 400;
+    }
+    .npser-p-light { color: #e2e8f0; }
+
+    .npser-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(330px, 1fr)); gap: 24px; }
+    .npser-card {
+      background: #ffffff; padding: 32px 28px; border-radius: 14px;
+      border: 1px solid #e6ecf3; border-top: 4px solid #FF6B35;
+      transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+      box-shadow: 0 2px 10px rgba(26,43,74,0.05); display: flex; flex-direction: column; position: relative;
+    }
+    .npser-card:hover { transform: translateY(-6px); box-shadow: 0 20px 40px rgba(26,43,74,0.12); border-color: #d5dde6; }
+    .npser-card p { font-family: 'Inter', sans-serif; font-size: 16px; line-height: 1.75; color: #475569; margin: 0 0 14px 0; }
+    .npser-card p:last-of-type { margin-bottom: 20px; }
+
+    .npser-list-check {
+      list-style: none; padding: 0; margin: 10px 0 20px;
+      display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px 18px;
+    }
+    .npser-list-check li {
+      font-family: 'Inter', sans-serif; font-size: 15.5px; color: #334155;
+      padding: 14px 16px 14px 48px; position: relative; font-weight: 500;
+      background: #f8fafc; border-radius: 10px; border-left: 4px solid #FF6B35;
+      line-height: 1.5; transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .npser-list-check li:hover { transform: translateX(4px); box-shadow: 0 6px 16px rgba(26,43,74,0.06); }
+    .npser-list-check li:before {
+      content: "\2713"; position: absolute; left: 12px; top: 50%; transform: translateY(-50%);
+      color: #fff; font-weight: 700; font-size: 12px; width: 24px; height: 24px;
+      background: linear-gradient(135deg, #FF6B35 0%, #E85A28 100%); border-radius: 50%;
+      display: flex; align-items: center; justify-content: center; box-shadow: 0 3px 10px rgba(255,107,53,0.35);
+    }
+
+    .npser-cta-row { margin-top: 30px; display: flex; gap: 18px; justify-content: center; flex-wrap: wrap; }
+    .npser-btn {
+      display: inline-block; padding: 18px 42px; font-family: 'Poppins', sans-serif;
+      font-size: 18px; font-weight: 700; border-radius: 12px; text-decoration: none !important;
+      border-bottom: none !important; transition: all 0.3s ease; min-width: 260px;
+      text-align: center; line-height: 1.25; letter-spacing: 0.2px;
+    }
+    .npser-btn-primary {
+      background: linear-gradient(135deg, #FF6B35 0%, #E85A28 100%);
+      color: #ffffff !important; border: none; box-shadow: 0 8px 24px rgba(255,107,53,0.4);
+    }
+    .npser-btn-primary:hover { transform: translateY(-3px); box-shadow: 0 14px 32px rgba(255,107,53,0.55); color: #ffffff !important; }
+    .npser-btn-secondary {
+      background: #ffffff; color: #FF6B35 !important; border: 2px solid #FF6B35;
+      box-shadow: 0 4px 14px rgba(255,107,53,0.15);
+    }
+    .npser-btn-secondary:hover { background: #FF6B35; color: #ffffff !important; transform: translateY(-3px); box-shadow: 0 10px 26px rgba(255,107,53,0.4); }
+
+    .npser-faq-list { display: flex; flex-direction: column; gap: 16px; margin-top: 32px; }
+    .npser-faq-item {
+      background: #ffffff; padding: 28px 30px; border-radius: 14px;
+      border: 1px solid rgba(255,107,53,0.15); border-left: 5px solid #FF6B35;
+      transition: transform 0.3s ease, box-shadow 0.3s ease; box-shadow: 0 3px 14px rgba(0,0,0,0.12);
+    }
+    .npser-faq-item:hover { transform: translateX(6px); box-shadow: 0 12px 30px rgba(0,0,0,0.22); }
+    .npser-faq-item p { font-family: 'Inter', sans-serif; font-size: 16.5px; line-height: 1.8; color: #475569; margin: 0; }
+
+    @media (max-width: 768px) {
+      .npser-section { padding: 60px 20px; }
+      .npser-h2 { font-size: 30px; }
+      .npser-h2-sub { font-size: 22px !important; }
+      .npser-grid { grid-template-columns: 1fr; }
+      .npser-list-check { grid-template-columns: 1fr; }
+      .npser-btn { width: 100%; padding: 15px 20px; font-size: 16px; min-width: 100%; }
+      .npser-faq-h2 { font-size: 18px; }
+      .npser-card-h2 { font-size: 20px; }
+    }
+  </style>
+</head>
+
+<body class="bg-white text-slate-800 antialiased">
+
+<!-- ================= HEADER (From Live Website) ================= -->
+<div class="hidden md:block bg-navy text-slate-200 text-sm">
+  <div class="max-w-7xl mx-auto px-4 flex items-center justify-between py-2">
+    <div class="flex items-center gap-5">
+      <span class="inline-flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-accent animate-pulse"></span> 24/7 Emergency Connection</span>
+      <span class="text-slate-400">|</span>
+      <span class="inline-flex items-center gap-2">
+        <svg class="w-4 h-4 text-teal-400" fill="currentColor" viewBox="0 0 20 20"><path d="M2 4a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V4z"/></svg>
+        Mon–Sat 7am–7pm
+      </span>
+    </div>
+    <div class="flex items-center gap-5">
+      <span class="inline-flex items-center gap-1.5 text-amber-300">★★★★★ <span class="text-slate-300">Trusted Local Service</span></span>
+      <span class="text-slate-400">|</span>
+      <span class="text-slate-300">Licensed &amp; Insured Professionals</span>
+    </div>
+  </div>
+</div>
+
+<header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-slate-100 shadow-sm">
+  <nav class="max-w-7xl mx-auto px-4 flex items-center justify-between h-[68px]">
+    <a href="/" class="flex items-center gap-2.5 shrink-0">
+      <span class="grid place-items-center w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-teal text-white">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3c3.5 4.2 6 7.2 6 10.2A6 6 0 016 13.2C6 10.2 8.5 7.2 12 3z"/></svg>
+      </span>
+      <span class="leading-tight">
+        <span class="block font-display font-extrabold text-navy text-base sm:text-lg">Water Leak Detection</span>
+        <span class="block text-[11px] tracking-wide text-slate-500 -mt-0.5">Huntington Beach, CA</span>
+      </span>
+    </a>
+    <ul class="hidden lg:flex items-center gap-1 text-[15px] font-medium text-slate-700">
+      <li><a class="px-3 py-2 rounded-lg hover:text-primary hover:bg-slate-50" href="#hero">Home</a></li>
+      <li class="relative group">
+        <a class='px-3 py-2 rounded-lg hover:text-primary hover:bg-slate-50 inline-flex items-center gap-1' href='/services'>
+          Services
+          <svg class="w-4 h-4 opacity-60" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" d="M6 9l6 6 6-6"/>
+          </svg>
+        </a>
+        <div class="absolute left-0 top-full pt-2 w-72 hidden group-hover:block z-50">
+          <div class="bg-white rounded-xl shadow-xl ring-1 ring-slate-100 p-2">
+            <a href="https://waterheaterrepairhuntingtonbeachca.com/tankless-water-heater-installation-huntington-beach-ca" class="block px-3 py-2 rounded-lg hover:bg-slate-50 text-sm text-slate-700 hover:text-primary">Tankless Water Heater Installation</a>
+            <a href="https://waterheaterrepairhuntingtonbeachca.com/water-heater-maintenance-huntington-beach-ca" class="block px-3 py-2 rounded-lg hover:bg-slate-50 text-sm text-slate-700 hover:text-primary">Water Heater Maintenance</a>
+            <a href="https://waterheaterrepairhuntingtonbeachca.com/water-heater-installation-huntington-beach-ca" class="block px-3 py-2 rounded-lg hover:bg-slate-50 text-sm text-slate-700 hover:text-primary">Water Heater Installation</a>
+            <a href="https://waterheaterrepairhuntingtonbeachca.com/water-heater-replacement-huntington-beach-ca" class="block px-3 py-2 rounded-lg hover:bg-slate-50 text-sm text-slate-700 hover:text-primary">Water Heater Replacement</a>
+            <a href="https://waterheaterrepairhuntingtonbeachca.com/tankless-water-heater-repair-huntington-beach-ca" class="block px-3 py-2 rounded-lg hover:bg-slate-50 text-sm text-slate-700 hover:text-primary">Tankless Water Heater Repair</a>
+            <a href="https://waterheaterrepairhuntingtonbeachca.com/" class="block px-3 py-2 rounded-lg hover:bg-slate-50 text-sm font-semibold text-primary">All Services →</a>
+          </div>
+        </div>
+      </li>
+      <li><a class="px-3 py-2 rounded-lg hover:text-primary hover:bg-slate-50" href="#process">Process</a></li>
+      <li><a class="px-3 py-2 rounded-lg hover:text-primary hover:bg-slate-50" href="#cost">Cost</a></li>
+    </ul>
+    <div class="flex items-center gap-2">
+      <a href="tel:+17144395780" class="hidden sm:inline-flex items-center gap-2 rounded-xl bg-accent hover:bg-accent-dark text-white font-semibold px-4 py-2.5 shadow-sm">
+        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M2 4a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V4z"/></svg>
+        (714) 439-5780
+      </a>
+      <button data-nav-toggle aria-expanded="false" aria-label="Open menu" class="lg:hidden grid place-items-center w-11 h-11 rounded-xl ring-1 ring-slate-200 text-navy">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </nav>
+  <div data-mobile-nav class="hidden lg:hidden border-t border-slate-100 bg-white">
+    <div class="px-4 py-3 space-y-1">
+      <a class="block px-3 py-2.5 rounded-lg hover:bg-slate-50 font-medium" href="#hero">Home</a>
+      <a class="block px-3 py-2.5 rounded-lg hover:bg-slate-50 font-medium" href="#services">Services</a>
+      <a class="block px-3 py-2.5 rounded-lg hover:bg-slate-50 font-medium" href="#process">Process</a>
+      <a class="block px-3 py-2.5 rounded-lg hover:bg-slate-50 font-medium" href="#cost">Cost</a>
+      <a href="tel:+17144395780" class="mt-2 flex items-center justify-center gap-2 rounded-xl bg-accent text-white font-semibold px-4 py-3">Call (714) 439-5780</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============ HERO SECTION ============ -->
+<div class="hp-hero" style="position: relative; width: 100%; min-height: 600px; display: flex; align-items: center; overflow: hidden; padding: 80px 30px; background: #1A2B4A;">
+  <div class="hp-hero-bg" style="position: absolute; inset: 0; background-image: url('https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=1920&q=80'); background-size: cover; background-position: center; z-index: 1;"></div>
+  <div class="hp-hero-overlay" style="position: absolute; inset: 0; background: linear-gradient(90deg, rgba(10, 20, 40, 0.92) 0%, rgba(15, 30, 56, 0.85) 45%, rgba(15, 30, 56, 0.55) 75%, rgba(15, 30, 56, 0.35) 100%); z-index: 2;"></div>
+
+  <div class="hp-hero-wrap" style="position: relative; z-index: 3; max-width: 1180px; width: 100%; margin: 0 auto; text-align: left; color: #ffffff;">
+    <div class="hp-ratings" style="display: flex; align-items: center; gap: 16px; margin-bottom: 32px; flex-wrap: wrap;">
+      <div class="hp-rating" style="display: inline-flex; align-items: center; gap: 10px; background: rgba(255,255,255,0.10); border: 1px solid rgba(255,255,255,0.18); padding: 8px 16px; border-radius: 30px; backdrop-filter: blur(10px);">
+        <span class="hp-rating-icon" style="display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; background: #ffffff; border-radius: 50%;">
+          <svg viewBox="0 0 48 48" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path fill="#FFC107" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"/><path fill="#FF3D00" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"/><path fill="#4CAF50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"/><path fill="#1976D2" d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"/></svg>
+        </span>
+        <div class="hp-rating-body" style="display: flex; flex-direction: column; line-height: 1.15;">
+          <div class="hp-rating-stars" style="font-size: 13px; color: #FFC107;">★★★★★</div>
+          <div class="hp-rating-score" style="font-size: 11.5px; color: #ffffff; font-weight: 600; margin-top: 3px;"><strong>4.9</strong> RATING</div>
+        </div>
+      </div>
+      <div class="hp-rating" style="display: inline-flex; align-items: center; gap: 10px; background: rgba(255,255,255,0.10); border: 1px solid rgba(255,255,255,0.18); padding: 8px 16px; border-radius: 30px; backdrop-filter: blur(10px);">
+        <span class="hp-rating-icon" style="display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; background: #ffffff; border-radius: 50%;">
+          <svg viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="12" fill="#1877F2"/><path fill="#FFFFFF" d="M16.671,9.998h-3.212V7.999c0-0.885,0.572-1.09,0.975-1.09h2.198V3.979l-3.028-0.011c-3.362,0-4.125,2.516-4.125,4.127v1.904H7.328v3.04h2.151v8.953h3.979v-8.953h2.917L16.671,9.998z"/></svg>
+        </span>
+        <div class="hp-rating-body" style="display: flex; flex-direction: column; line-height: 1.15;">
+          <div class="hp-rating-stars" style="font-size: 13px; color: #FFC107;">★★★★★</div>
+          <div class="hp-rating-score" style="font-size: 11.5px; color: #ffffff; font-weight: 600; margin-top: 3px;"><strong>4.9</strong> RATING</div>
+        </div>
+      </div>
+    </div>
+
+    <h1 style="font-family: 'Poppins', sans-serif; font-size: 3.5rem; font-weight: 800; line-height: 1.1; margin-bottom: 20px; color: #fff;">Water Leak Detection in<br><span style="color: #FF6B35;">Huntington Beach, CA</span></h1>
+    
+    <p class="hp-desc" style="font-family: 'Inter', sans-serif; font-size: 18px; line-height: 1.75; color: #e2e8f0; margin: 0 0 28px 0; max-width: 680px;">
+      Finding a hidden water leak can help to prevent damage to your walls, floor, cabinets and other areas of your property. Signs of a water leak could include a sudden change in your water usage, signs of water damage including wet patches and running water sounds when the fixtures are off. Water leak detection services can be used to help identify the likely source of your leak. If you're concerned you have a leaking pipe, slab leak or issue with your underground water line, you can choose from various water leak detection methods. If you are looking for <strong>leak detection Huntington Beach CA</strong> or <strong>leak detection Huntington Beach</strong>, the appropriate method will depend on the location and suspected cause of the leak.
+    </p>
+
+    <div class="hp-features" style="display: flex; align-items: center; gap: 36px; margin-bottom: 34px; flex-wrap: wrap;">
+      <div class="hp-feature" style="display: inline-flex; align-items: center; gap: 10px; color: #ffffff;">
+        <span class="hp-feature-icon" style="display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; background: rgba(255,107,53,0.18); border: 1.5px solid rgba(255,107,53,0.55); border-radius: 50%;">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15.5 14"/></svg>
+        </span>
+        <span class="hp-feature-text" style="font-family: 'Poppins', sans-serif; font-size: 14px; font-weight: 700; letter-spacing: 1.3px; text-transform: uppercase;">SAME DAY SERVICE</span>
+      </div>
+      <div class="hp-feature" style="display: inline-flex; align-items: center; gap: 10px; color: #ffffff;">
+        <span class="hp-feature-icon" style="display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; background: rgba(255,107,53,0.18); border: 1.5px solid rgba(255,107,53,0.55); border-radius: 50%;">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+        </span>
+        <span class="hp-feature-text" style="font-family: 'Poppins', sans-serif; font-size: 14px; font-weight: 700; letter-spacing: 1.3px; text-transform: uppercase;">LICENSED &amp; INSURED</span>
+      </div>
+      <div class="hp-feature" style="display: inline-flex; align-items: center; gap: 10px; color: #ffffff;">
+        <span class="hp-feature-icon" style="display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; background: rgba(255,107,53,0.18); border: 1.5px solid rgba(255,107,53,0.55); border-radius: 50%;">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+        </span>
+        <span class="hp-feature-text" style="font-family: 'Poppins', sans-serif; font-size: 14px; font-weight: 700; letter-spacing: 1.3px; text-transform: uppercase;">NO MESS LEFT BEHIND</span>
+      </div>
+    </div>
+
+    <div class="hp-action-row" style="display: flex; align-items: center; gap: 22px; flex-wrap: wrap;">
+      <a href="tel:+17144395780" class="hp-call-btn" style="display: inline-flex; align-items: center; gap: 12px; padding: 20px 36px; font-family: 'Poppins', sans-serif; font-size: 17px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; border-radius: 50px; background: linear-gradient(135deg, #FF6B35 0%, #E85A28 100%); color: #ffffff !important; text-decoration: none !important; border: none; box-shadow: 0 10px 30px rgba(255,107,53,0.5); transition: all 0.3s ease;">
+        <span class="hp-call-icon"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+        <span class="hp-call-text">CALL (714) 439-5780</span>
+        <span class="hp-call-arrow">→</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ============ TRUST BAR ============ -->
+<section class="npser-section" style="background: #ffffff; padding: 0; border-bottom: 1px solid #e6ecf3;">
+  <div style="max-width: 1240px; margin: 0 auto; display: grid; grid-template-columns: repeat(4, 1fr);">
+    <div style="padding: 34px 18px; text-align: center; border-right: 1px solid #e6ecf3;">
+      <div style="font-size: 26px; margin-bottom: 10px;">⚡</div>
+      <div style="font-family: 'Poppins', sans-serif; font-size: 28px; font-weight: 700; color: #1A2B4A;">Fast</div>
+      <div style="font-size: 15px; color: #64748b; font-weight: 500;">Call Connection</div>
+    </div>
+    <div style="padding: 34px 18px; text-align: center; border-right: 1px solid #e6ecf3;">
+      <div style="font-size: 26px; margin-bottom: 10px;">🤝</div>
+      <div style="font-family: 'Poppins', sans-serif; font-size: 28px; font-weight: 700; color: #1A2B4A;">Friendly</div>
+      <div style="font-size: 15px; color: #64748b; font-weight: 500;">Customer Support</div>
+    </div>
+    <div style="padding: 34px 18px; text-align: center; border-right: 1px solid #e6ecf3;">
+      <div style="font-size: 26px; margin-bottom: 10px;">📍</div>
+      <div style="font-family: 'Poppins', sans-serif; font-size: 28px; font-weight: 700; color: #1A2B4A;">Local</div>
+      <div style="font-size: 15px; color: #64748b; font-weight: 500;">Serving Huntington Beach, CA</div>
+    </div>
+    <div style="padding: 34px 18px; text-align: center;">
+      <div style="font-size: 26px; margin-bottom: 10px;">✨</div>
+      <div style="font-family: 'Poppins', sans-serif; font-size: 28px; font-weight: 700; color: #1A2B4A;">Simple</div>
+      <div style="font-size: 15px; color: #64748b; font-weight: 500;">Process</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SIGNS OF HIDDEN LEAKS ============ -->
+<section class="npser-section" style="background: #F8F9FA;">
+  <div class="npser-wrap">
+    <h2 class="npser-h2 npser-h2-dark">Signs of Hidden Water Leaks</h2>
+    <p class="npser-p">Sometimes there may not be a visible puddle from the water leak. Leaks may occur within pipes behind walls, under flooring or within your concrete slabs. <strong>Huntington Beach hidden leak detection</strong> can help investigate suspected leaks when the source is not immediately visible.</p>
+    
+    <h3 class="npser-h2-sub">Unexpected Increase in Water Usage</h3>
+    <p class="npser-p">If you're experiencing an unexpected increase in your water bill it may be worth getting a water leak investigation. This could be due to a water leak but could also be due to irrigation, running toilet or just a change in how much water is being used.</p>
+    <p class="npser-p">To investigate, you can turn off any faucets or appliances that use water. Check that your water meter is still showing water usage if you're able to safely get to it. Follow your water meter manufacturers guidance. Water meter results can be impacted by automatic irrigation systems.</p>
+
+    <h3 class="npser-h2-sub">Wet Patches, Staining and Flaking Paint</h3>
+    <p class="npser-p">Water leaks can cause discolouration, bubbles in paint, warped flooring and wet cabinets. This could be caused by a water leak however it could also be due to a leak in your roof, condensation or outside water.</p>
+    <p class="npser-p">If the leak is near a bathroom you may want to investigate the plumbing in the area. If it's near an external wall you may wish to do a more general investigation.</p>
+
+    <h3 class="npser-h2-sub">Mouldy Smells and Mold</h3>
+    <p class="npser-p">If you are experiencing mouldy smells it could be due to dampness in materials. If you are also experiencing mouldy discolouration, soft drywall and regular water then finding the source of the water is an important step.</p>
+    <p class="npser-p">Not all mouldy smells are due to a water leak in your plumbing, however a qualified professional can help to identify if it could be a plumbing issue. They can advise you on further investigations.</p>
+
+    <h3 class="npser-h2-sub">Running Water</h3>
+    <p class="npser-p">If you're hearing running water in your pipes when all your fixtures are off then it could be a water leak. However it could also be caused by running toilets, water treatment equipment and irrigation.</p>
+    <p class="npser-p">You can check the accessible fixtures and appliances first. If you're still experiencing running water then having a water leak investigation can help identify the issue.</p>
+  </div>
+</section>
+
+<!-- ============ COMMON WATER LEAK ISSUES ============ -->
+<section class="npser-section" style="background: #ffffff;">
+  <div class="npser-wrap">
+    <h2 class="npser-h2 npser-h2-dark">Common Water Leak Issues</h2>
+    <p class="npser-p">The location of the leak will impact how it is investigated and repaired. Knowing the most common issues can help you explain the symptoms you're experiencing. <strong>Huntington Beach leak detection</strong> and <strong>Huntington Beach water leak detection</strong> may involve different investigation methods depending on whether the suspected leak is inside the property, beneath the foundation or underground.</p>
+    
+    <h3 class="npser-h2-sub">Slab Leak</h3>
+    <p class="npser-p">A slab leak can occur when there is an issue with the plumbing below your concrete foundation. Signs of a slab leak could include unexpected dampness, warm/wet flooring in certain areas and unusual high water usage.</p>
+    <p class="npser-p">This doesn't guarantee there is a slab leak however as the plumbing is behind the concrete it can be difficult to identify. Professionals can use water leak detection to help identify the likely source. For suspected leaks beneath a concrete foundation, <strong>plumbing leak detection Huntington Beach</strong> professionals may consider the pipe location, symptoms and condition of the property when choosing an investigation method.</p>
+
+    <h3 class="npser-h2-sub">Behind Walls and Flooring</h3>
+    <p class="npser-p">Leaks can occur within your water supply pipes behind walls, under flooring or in your ceiling. Leaks can occur at connections, joins and damaged areas causing water to seep into surrounding materials.</p>
+    <p class="npser-p">Investigating the dampness and plumbing in the area can help identify the likely source. This can help prevent unnecessary damage when opening up walls or flooring.</p>
+
+    <h3 class="npser-h2-sub">Pipe, Fixtures and Water Supply Leak</h3>
+    <p class="npser-p">Some leaks are easy to identify. Leaks can occur at faucets, toilet connections, damaged supply hoses and loose plumbing fittings.</p>
+    <p class="npser-p">Checking the connections can help identify if there is any dampness. If there is a visible leak then it may be relatively easy to repair. However if there is hidden dampness or regular dampness then it could be a more complex issue.</p>
+
+    <h3 class="npser-h2-sub">Underground Water Leak</h3>
+    <p class="npser-p">Water supply leaks can occur underground in your yard, drive, pathways or landscaping. Signs of a water leak could include unexpected dampness, damp patches and changes in water pressure.</p>
+    <p class="npser-p">However dampness can occur outside due to irrigation, drainage and rainwater. Getting a suitable investigation can help identify if it could be a water supply issue. <strong>Hidden leak detection Huntington Beach</strong> investigations may be considered when the suspected leak is not visible at the surface.</p>
+  </div>
+</section>
+
+<!-- ============ DETECTION METHODS ============ -->
+<section id="process" class="npser-section" style="background: #F8F9FA;">
+  <div class="npser-wrap">
+    <h2 class="npser-h2 npser-h2-dark">Water Leak Detection Methods</h2>
+    <p class="npser-p">Depending on where the pipes are, what type of leak you suspect and how your property is built professionals can use various methods. When comparing <strong>leak detection services Huntington Beach CA</strong>, ask which investigation methods may be appropriate for your property and suspected leak.</p>
+    
+    <h3 class="npser-h2-sub">Acoustic Water Leak Detection</h3>
+    <p class="npser-p">Acoustic equipment can be used to detect the sound of water leaking from pressurised pipes. A trained operative can use specialist listening equipment to identify the likely source.</p>
+    <p class="npser-p">This can help identify some hidden or underground pressurised water lines. However results can vary due to background noise, pipe type, size of the leak and surrounding area.</p>
+
+    <h3 class="npser-h2-sub">Thermal Imaging</h3>
+    <p class="npser-p">Thermal imaging equipment can be used to detect changes in the surface temperatures. This can sometimes help identify the area that is affected by dampness or hot water leaks.</p>
+    <p class="npser-p">Thermal imaging cannot guarantee that there is a plumbing leak however temperature changes can be caused by other issues.</p>
+
+    <h3 class="npser-h2-sub">Moisture Meter & Visual Inspection</h3>
+    <p class="npser-p">Moisture meters can be used to help identify how damp the area is. Visual inspections can help identify any staining, swelling, rusting or other signs.</p>
+    <p class="npser-p">This can help identify what areas have been affected however it may not tell you the exact source. Further investigations may be required to identify if it is an issue with your plumbing.</p>
+
+    <h3 class="npser-h2-sub">Pressure Testing</h3>
+    <p class="npser-p">Depending on your plumbing a pressure test may help identify if your water line is maintaining pressure. The test needs to be suitable for the type of pipe.</p>
+    <p class="npser-p">A professional may use a combination of pressure testing, acoustic equipment, visual inspections or others to help identify the likely issue. This will ensure they have enough evidence.</p>
+  </div>
+</section>
+
+<!-- ============ HOW INVESTIGATION WORKS ============ -->
+<section class="npser-section" style="background: #ffffff;">
+  <div class="npser-wrap">
+    <h2 class="npser-h2 npser-h2-dark">How the Investigation Will Work</h2>
+    <p class="npser-p">Your investigation will follow a set process to help narrow down the source.</p>
+    <div style="display: flex; flex-direction: column; gap: 16px; margin-top: 24px;">
+        <div style="background: #F8F9FA; padding: 20px; border-radius: 12px; border-left: 4px solid #FF6B35; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+            <strong style="color: #1A2B4A; font-size: 18px;">Discuss Symptoms</strong>
+            <p class="npser-p" style="margin: 8px 0 0 0;">Tell the professional when the issue started, where you're seeing dampness and if there has been any changes to your water bill or pressure.</p>
+        </div>
+        <div style="background: #F8F9FA; padding: 20px; border-radius: 12px; border-left: 4px solid #FF6B35; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+            <strong style="color: #1A2B4A; font-size: 18px;">Visual Inspection</strong>
+            <p class="npser-p" style="margin: 8px 0 0 0;">The professional will look at any accessible areas including pipes, fixtures, cabinets, walls and flooring.</p>
+        </div>
+        <div style="background: #F8F9FA; padding: 20px; border-radius: 12px; border-left: 4px solid #FF6B35; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+            <strong style="color: #1A2B4A; font-size: 18px;">Water Usage/Issues</strong>
+            <p class="npser-p" style="margin: 8px 0 0 0;">Where applicable they may check your water meter or carry out other tests to identify if there is unexpected water usage.</p>
+        </div>
+        <div style="background: #F8F9FA; padding: 20px; border-radius: 12px; border-left: 4px solid #FF6B35; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+            <strong style="color: #1A2B4A; font-size: 18px;">Choose Method</strong>
+            <p class="npser-p" style="margin: 8px 0 0 0;">Depending on where you suspect the leak is and your plumbing they will choose the right equipment.</p>
+        </div>
+        <div style="background: #F8F9FA; padding: 20px; border-radius: 12px; border-left: 4px solid #FF6B35; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+            <strong style="color: #1A2B4A; font-size: 18px;">Narrow Down Source</strong>
+            <p class="npser-p" style="margin: 8px 0 0 0;">They will discuss the findings to help identify the likely source.</p>
+        </div>
+        <div style="background: #F8F9FA; padding: 20px; border-radius: 12px; border-left: 4px solid #FF6B35; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+            <strong style="color: #1A2B4A; font-size: 18px;">Next Steps</strong>
+            <p class="npser-p" style="margin: 8px 0 0 0;">They will discuss what they found and if any further tests are required. They will also discuss what possible repair options there are.</p>
+        </div>
+    </div>
+    <p class="npser-p" style="margin-top: 24px;">The exact process will depend on your property. Some leaks are easy to identify however others may require more than one investigation method. Water leak detection can help narrow down the source. However there may be some minimal access required to identify which pipe has been damaged.</p>
+  </div>
+</section>
+
+<!-- ============ WHAT TO DO ============ -->
+<section class="npser-section" style="background: #F8F9FA;">
+  <div class="npser-wrap">
+    <h2 class="npser-h2 npser-h2-dark">What to Do if you Suspect a Water Leak</h2>
+    <p class="npser-p">Simple steps can be taken to prevent further water damage.</p>
+    <ul class="npser-list-check" style="grid-template-columns: 1fr; gap: 12px; margin-bottom: 20px;">
+        <li>Turn off the nearest suitable water valve if it is safe to do so.</li>
+        <li>If you cannot isolate the leak then consider turning off the main water supply to your property.</li>
+        <li>Move items away from any damp areas to protect them.</li>
+        <li>Don't touch any electrical equipment, switches or sockets in the damp area. If there is water near any electrical equipment keep clear and contact the correct qualified professional.</li>
+        <li>Take pictures of any visible damage to record it. This can help with any potential claims.</li>
+        <li>Try not to open any walls or flooring until the likely source has been identified.</li>
+    </ul>
+    <p class="npser-p">If there is a large leak, the water is spreading quickly or there is a bulge in your ceiling then try to keep safe and contact a professional quickly. Don't enter any area that may be unsafe. If you need urgent plumbing assistance, an <strong>emergency plumber near me</strong> search may help you find a provider to contact, but confirm that they can handle your specific leak and that they are available.</p>
+  </div>
+</section>
+
+<!-- ============ RESIDENTIAL & COMMERCIAL ============ -->
+<section class="npser-section" style="background: #ffffff;">
+  <div class="npser-wrap">
+    <h2 class="npser-h2 npser-h2-dark">Water Leak Detection for Residential & Commercial Properties</h2>
+    <p class="npser-p">Residential and commercial properties can vary in terms of plumbing, access and water usage. Homes can have accessible water supply lines under sinks. Whereas commercial properties can have multiple bathrooms, connections to equipment and separate water areas.</p>
+    <p class="npser-p">Investigations for homes can be carried out in a bathroom, kitchen, water heater connection, slab or underground supply. Investigations for businesses may need to consider if the leak is affecting communal areas, equipment or areas that need to stay accessible.</p>
+    <p class="npser-p">When booking water leak detection in Huntington Beach, CA it can be helpful to provide details about what type of building you have, where you think the leak is, any visible damage and if it is active. This can help identify what equipment will be needed. Please confirm what types of properties they can service. If you are searching for a <strong>commercial plumber</strong> or <strong>commercial plumber near me</strong>, check whether the provider handles leak investigations for your type of commercial property. For a home, a <strong>residential plumber</strong> may be an option, depending on the service offered.</p>
+  </div>
+</section>
+
+<!-- ============ COST ============ -->
+<section id="cost" class="npser-section" style="background: #F8F9FA;">
+  <div class="npser-wrap">
+    <h2 class="npser-h2 npser-h2-dark">What Affects Water Leak Detection Prices?</h2>
+    <p class="npser-p">The price of water leak detection will depend on what investigation is required and how hard the suspected leak is to find. If there is a visible leak in your water supply line then it will be different to a hidden leak in concrete. If you are researching <strong>leak detection cost Huntington Beach</strong>, ask the provider for a quote based on the suspected leak and investigation needed.</p>
+    <p class="npser-p"><strong>Common factors that affect the price include:</strong></p>
+    <ul class="npser-list-check" style="grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 20px;">
+        <li><strong>Leak Location:</strong> If there are accessible fixtures, hidden pipes or underground pipes.</li>
+        <li><strong>Building Type:</strong> Slab foundations, finished walls, ceilings & flooring.</li>
+        <li><strong>Equipment:</strong> Acoustic testing, thermal imaging, moisture testing etc.</li>
+        <li><strong>Investigation Complexity:</strong> If there are multiple suspected areas or the initial findings are unclear then further investigations may be required.</li>
+        <li><strong>Further Repairs:</strong> Leak detection and plumbing repairs may be charged separately.</li>
+        <li><strong>Access & Reinstatement:</strong> Opening and reinstating walls, flooring or concrete can add to the cost.</li>
+    </ul>
+    <p class="npser-p">Before agreeing to the service please ask what is included in the investigation, is there a report or documented findings and is there a charge for repairs. Any extra charges should be explained by the provider.</p>
+  </div>
+</section>
+
+<!-- ============ DETECTION & REPAIRS ============ -->
+<section class="npser-section" style="background: #ffffff;">
+  <div class="npser-wrap">
+    <h2 class="npser-h2 npser-h2-dark">Water Leak Detection & Repairs</h2>
+    <p class="npser-p">Water leak detection is slightly different to repairs. The aim of the investigation is to identify the likely source of the issue. Repairs will focus on fixing the damaged pipe, fittings or other components. If you are looking for <strong>Huntington Beach leak detection & repair</strong>, confirm whether the provider offers both investigation and repair work or whether a separate professional will be needed.</p>
+    <p class="npser-p">Depending on the findings repairs could include replacing a fitting, fixing an accessible pipe, repairing a water supply line or planning work on a hidden pipe. If there is a slab leak then there may be further considerations regarding access, diverting or repairing the affected area.</p>
+    <p class="npser-p">Ask if they offer both leak detection and repair or if they will refer you to another professional. Also ask if they will repair the walls, flooring or concrete. This will help you understand what is involved.</p>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="npser-section" style="background: linear-gradient(135deg, #1A2B4A 0%, #243B5E 100%);">
+  <div class="npser-wrap">
+    <h2 class="npser-h2 npser-h2-orange" style="text-align:center;">FAQ</h2>
+    <div class="npser-faq-list">
+      <div class="npser-faq-item">
+        <h2 class="npser-faq-h2">How do I know if I have a hidden water leak?</h2>
+        <p>Symptoms can include unexpected increase in water usage, wet patches, flaking paint, warped flooring, mouldy smells and running water. These symptoms can have other causes so testing may be required to identify if there is an issue with your plumbing.</p>
+      </div>
+      <div class="npser-faq-item">
+        <h2 class="npser-faq-h2">Can a plumber find a leak without damaging walls or flooring?</h2>
+        <p>Often non-invasive methods can help to narrow down the likely source of the leak. Acoustic equipment, thermal imaging and moisture meters can be useful in the right circumstances. However some leaks will require minimal access.</p>
+      </div>
+      <div class="npser-faq-item">
+        <h2 class="npser-faq-h2">What is slab leak detection?</h2>
+        <p>Slab leak detection is when a suspected leak is investigated in a pipe under your concrete foundation. Depending on your plumbing and symptoms a professional can use acoustic equipment, pressure testing or other methods to narrow down the likely source.</p>
+      </div>
+      <div class="npser-faq-item">
+        <h2 class="npser-faq-h2">How much does water leak detection cost in Huntington Beach, CA?</h2>
+        <p>The cost will depend on where the leak is suspected, what type of building you have, what equipment is required and how complex the investigation. Ask for a price specific to your project. Ask if further investigations, documentation and repairs are included.</p>
+      </div>
+      <div class="npser-faq-item">
+        <h2 class="npser-faq-h2">Can a water leak cause me to have a high water bill?</h2>
+        <p>Yes, a leaking water supply line, running toilet or other plumbing issues can cause increased water usage. Issues with irrigation and changes in normal usage can also cause this. Checking your water meter and investigating other possible causes can help identify the source.</p>
+      </div>
+      <div class="npser-faq-item">
+        <h2 class="npser-faq-h2">Is water leak detection the same as repairs?</h2>
+        <p>No, the aim of water leak detection is to identify or narrow down the source of the leak. Repairs will focus on fixing the damaged part. Some providers will offer both however some may refer you to another professional.</p>
+      </div>
+      <div class="npser-faq-item">
+        <h2 class="npser-faq-h2">What should I do if my pipe is leaking?</h2>
+        <p>If it is safe turn off the correct water valve or main water supply. Keep clear of any electrical equipment that is wet and any unsafe areas. Try to protect your items. Contact someone quickly especially if the water is spreading or causing damage to your property. If you need prompt assistance, searches such as <strong>same day plumber near me</strong>, <strong>24 hour plumber near me</strong>, <strong>24 hr plumber near me</strong>, <strong>24 7 plumber near me</strong> or <strong>24/7 plumber</strong> may help you find potential providers; confirm actual availability directly. You can also search for a <strong>local plumber near me</strong> or <strong>plumber services near me</strong> and explain that you have a leaking pipe. If <strong>i need a plumber</strong> describes your situation, provide details about the leak so the provider can confirm whether they can help. Check qualifications if you are looking for a <strong>licensed plumber near me</strong>.</p>
+      </div>
+      <div class="npser-faq-item">
+        <h2 class="npser-faq-h2">Can underground water leaks be detected?</h2>
+        <p>Certain underground leaks can be investigated using specialist equipment. Acoustic methods can be used where appropriate. The best method will depend on the pipe, soil and surface conditions, leak and access. An investigation can help identify what method would be suitable.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<section class="npser-section" style="background: linear-gradient(135deg, #0F1E38 0%, #1A2B4A 100%);">
+  <div class="npser-wrap">
+    <h2 class="npser-h2 npser-h2-orange" style="text-align:center;">Get Help With Water Leak Detection in Huntington Beach, CA</h2>
+    <p class="npser-p npser-p-light" style="text-align:center; max-width: 800px; margin: 0 auto 20px auto;">Finding a hidden water leak can help to prevent damage to your walls, floor, cabinets and other areas of your property. Signs of a water leak could include a sudden change in your water usage, signs of water damage including wet patches and running water sounds when the fixtures are off.</p>
+    <p class="npser-p npser-p-light" style="text-align:center; max-width: 800px; margin: 0 auto 20px auto;">Water leak detection services can be used to help identify the likely source of your leak. If you're concerned you have a leaking pipe, slab leak or issue with your underground water line, you can choose from various water leak detection methods. If you are looking for <strong>leak detection Huntington Beach CA</strong> or <strong>leak detection Huntington Beach</strong>, the appropriate method will depend on the location and suspected cause of the leak.</p>
+    <p class="npser-p npser-p-light" style="text-align:center; max-width: 800px; margin: 0 auto 30px auto;">If this website is a lead generation/referral site then you may be matched with an independent plumbing professional. Make sure they can help with your issue, what method they would suggest, what they will do and how much it will cost.</p>
+    
+    <div class="npser-cta-row">
+      <a href="tel:+17144395780" class="npser-btn npser-btn-primary">📞 Call for Water Leak Detection</a>
+      <a href="#contact" class="npser-btn npser-btn-secondary">Request a Quote</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER (From Live Website) ================= -->
+<footer class="bg-navy text-slate-300 border-t border-white/10">
+  <div class="max-w-7xl mx-auto px-4 py-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+    <div>
+      <div class="flex items-center gap-2.5">
+        <span class="grid place-items-center w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-teal text-white">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3c3.5 4.2 6 7.2 6 10.2A6 6 0 016 13.2C6 10.2 8.5 7.2 12 3z"/></svg>
+        </span>
+        <span class="font-display font-extrabold text-white text-lg">Water Leak Detection Huntington Beach</span>
+      </div>
+      <p class="mt-4 text-sm text-slate-400">Your trusted connection to water leak detection professionals serving Huntington Beach, CA and surrounding areas.</p>
+      <p class="mt-4 text-sm"><span class="text-amber-300">★★★★★</span> Trusted Local Service</p>
+    </div>
+    <div>
+      <h3 class="font-display font-bold text-white text-lg">Services</h3>
+      <ul class="mt-4 space-y-2 text-sm">
+        <li><a class='hover:text-teal-400' href='https://waterheaterrepairhuntingtonbeachca.com/'>Water Heater Repair</a></li>
+        <li><a class='hover:text-teal-400' href='https://waterheaterrepairhuntingtonbeachca.com/water-heater-installation-huntington-beach-ca'>Water Heater Installation</a></li>
+        <li><a class='hover:text-teal-400' href='https://waterheaterrepairhuntingtonbeachca.com/water-heater-replacement-huntington-beach-ca'>Water Heater Replacement</a></li>
+        <li><a class='hover:text-teal-400' href='https://waterheaterrepairhuntingtonbeachca.com/tankless-water-heater-installation-huntington-beach-ca'>Tankless Water Heaters Installation</a></li>
+        <li><a class='hover:text-teal-400' href='https://waterheaterrepairhuntingtonbeachca.com/tankless-water-heater-repair-huntington-beach-ca'>Tankless Water Heaters Repair</a></li>
+        <li><a class='hover:text-teal-400' href='https://waterheaterrepairhuntingtonbeachca.com/water-heater-maintenance-huntington-beach-ca'>Water Heater Maintenance</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="font-display font-bold text-white text-lg">Quick Links</h3>
+      <ul class="mt-4 space-y-2 text-sm">
+        <li><a class="hover:text-teal-400" href="#process">Our Process</a></li>
+        <li><a class="hover:text-teal-400" href="#cost">Pricing & Cost</a></li>
+        <li><a class="hover:text-teal-400" href="#contact">Contact Us</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="font-display font-bold text-white text-lg">Get In Touch</h3>
+      <ul class="mt-4 space-y-3 text-sm">
+        <li class="flex items-start gap-2"><svg class="w-5 h-5 text-teal-400 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M2 4a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V4z"/></svg><a class="hover:text-teal-400 font-semibold text-white" href="tel:+17144395780">(714) 439-5780</a></li>
+        <li class="flex items-start gap-2"><svg class="w-5 h-5 text-teal-400 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/></svg><span>Huntington Beach, CA 92648</span></li>
+        <li class="flex items-start gap-2"><svg class="w-5 h-5 text-teal-400 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" d="M12 6v6l4 2M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg><span>Mon–Sat 7am–7pm · 24/7 Emergency</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 py-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-400">
+      <p>© <span id="year">2026</span> Water Leak Detection Huntington Beach. All rights reserved.</p>
+      <nav class="flex items-center gap-4" aria-label="Footer">
+        <a class="hover:text-teal-400" href="#services">Services</a>
+        <a class="hover:text-teal-400" href="#process">Process</a>
+        <a class="hover:text-teal-400" href="#">Disclaimer</a>
+        <a class="hover:text-teal-400" href="tel:+17144395780">Call</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<!-- STICKY MOBILE CALL BAR -->
+<div class="md:hidden fixed bottom-0 inset-x-0 z-40 bg-white border-t border-slate-200 shadow-[0_-6px_20px_-10px_rgba(0,0,0,0.25)]">
+  <div class="grid grid-cols-2 divide-x divide-slate-200">
+    <a href="tel:+17144395780" class="flex items-center justify-center gap-2 py-3.5 font-semibold text-navy">
+      <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20"><path d="M2 4a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V4z"/></svg>
+      Call Now
+    </a>
+    <a href="tel:+17144395780" class="flex items-center justify-center gap-2 py-3.5 font-semibold text-white bg-accent">Free Quote</a>
+  </div>
+</div>
+
+<script>
+  // Mobile nav toggle
+  const navToggle = document.querySelector('[data-nav-toggle]');
+  const mobileNav = document.querySelector('[data-mobile-nav]');
+  if (navToggle && mobileNav) {
+    navToggle.addEventListener('click', function() {
+      mobileNav.classList.toggle('hidden');
+      this.setAttribute('aria-expanded', !mobileNav.classList.contains('hidden'));
+    });
+  }
+  // Auto year
+  const yearEl = document.getElementById('year');
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+  // Smooth scroll
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', function(e) {
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        if (mobileNav && !mobileNav.classList.contains('hidden')) {
+          mobileNav.classList.add('hidden');
+          navToggle.setAttribute('aria-expanded', 'false');
+        }
+      }
+    });
+  });
+
+  // Reveal on scroll
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>

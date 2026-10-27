@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0f2b4a" />
+  <title>Faucet Repair in Huntington Beach, CA | Professional Plumbing Services</title>
+  <meta name="description" content="Professional faucet repair in Huntington Beach, CA. Fix dripping faucets, low water pressure, leaks & loose handles. Call (714) 439-5780 today!" />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&family=Poppins:wght@500;600;700;800;900&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: { DEFAULT: "#0f2b4a", 800: "#1a3a5c", 700: "#234b6e" },
+            primary: { DEFAULT: "#1a5f8a", 600: "#1473a8", 500: "#1a8bc4" },
+            accent: { DEFAULT: "#d97706", dark: "#b45309", light: "#f59e0b" },
+            teal: { DEFAULT: "#0d9488", 500: "#14b8a6" }
+          },
+          fontFamily: {
+            sans: ["Inter", "system-ui", "sans-serif"],
+            display: ["Plus Jakarta Sans", "Inter", "sans-serif"]
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
+    .reveal.in { opacity: 1; transform: translateY(0); }
+    .eyebrow-line::after {
+      content: ""; display: block; width: 48px; height: 3px;
+      background: linear-gradient(90deg, #d97706, #14b8a6);
+      margin: 12px auto 0; border-radius: 2px;
+    }
+
+    /* ============================================
+       CUSTOM STYLES FOR FAUCET REPAIR SECTIONS
+       ============================================ */
+    .npser-wrap { max-width: 1180px; margin: 0 auto; width: 100%; }
+    .npser-section { padding: 80px 30px; font-family: 'Inter', sans-serif; }
+    
+    .npser-h2 {
+      font-family: 'Poppins', sans-serif; font-size: 40px; font-weight: 700;
+      line-height: 1.25; letter-spacing: -0.6px; margin: 0 0 14px 0; position: relative;
+    }
+    .npser-h2:after {
+      content: ""; display: block; width: 60px; height: 4px;
+      background: #FF6B35; border-radius: 2px; margin-top: 14px;
+    }
+    .npser-h2-dark { color: #1A2B4A; }
+    .npser-h2-orange { color: #FF6B35; }
+    .npser-h2-orange:after { background: #FF6B35; }
+
+    .npser-h2-sub {
+      font-size: 26px !important; font-weight: 600 !important; color: #1A2B4A !important;
+      margin: 32px 0 10px 0 !important; padding-left: 16px; border-left: 5px solid #FF6B35;
+      line-height: 1.3; letter-spacing: -0.3px;
+    }
+    .npser-h2-sub:after { display: none !important; }
+
+    .npser-card-h2 {
+      font-family: 'Poppins', sans-serif; font-size: 22px; font-weight: 600;
+      color: #1A2B4A; margin: 0 0 12px 0; line-height: 1.3; letter-spacing: -0.2px;
+    }
+
+    .npser-faq-h2 {
+      font-family: 'Poppins', sans-serif; font-size: 21px; font-weight: 600;
+      color: #1A2B4A; margin: 0 0 10px 0; line-height: 1.4; position: relative; padding-left: 40px;
+    }
+    .npser-faq-h2:before {
+      content: "?"; position: absolute; left: 0; top: 50%; transform: translateY(-50%);
+      width: 28px; height: 28px; background: linear-gradient(135deg, #FF6B35 0%, #E85A28 100%);
+      color: #ffffff; border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      font-size: 16px; font-weight: 700; font-family: 'Poppins', sans-serif;
+      box-shadow: 0 3px 10px rgba(255,107,53,0.4);
+    }
+
+    .npser-p {
+      font-family: 'Inter', sans-serif; font-size: 18px; line-height: 1.8;
+      margin: 0 0 16px 0; color: #334155; font-weight: 400;
+    }
+    .npser-p-light { color: #e2e8f0; }
+
+    .npser-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(330px, 1fr)); gap: 24px; }
+    .npser-card {
+      background: #ffffff; padding: 32px 28px; border-radius: 14px;
+      border: 1px solid #e6ecf3; border-top: 4px solid #FF6B35;
+      transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+      box-shadow: 0 2px 10px rgba(26,43,74,0.05); display: flex; flex-direction: column; position: relative;
+    }
+    .npser-card:hover { transform: translateY(-6px); box-shadow: 0 20px 40px rgba(26,43,74,0.12); border-color: #d5dde6; }
+    .npser-card p { font-family: 'Inter', sans-serif; font-size: 16px; line-height: 1.75; color: #475569; margin: 0 0 14px 0; }
+    .npser-card p:last-of-type { margin-bottom: 20px; }
+
+    .npser-list-check {
+      list-style: none; padding: 0; margin: 10px 0 20px;
+      display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px 18px;
+    }
+    .npser-list-check li {
+      font-family: 'Inter', sans-serif; font-size: 15.5px; color: #334155;
+      padding: 14px 16px 14px 48px; position: relative; font-weight: 500;
+      background: #f8fafc; border-radius: 10px; border-left: 4px solid #FF6B35;
+      line-height: 1.5; transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .npser-list-check li:hover { transform: translateX(4px); box-shadow: 0 6px 16px rgba(26,43,74,0.06); }
+    .npser-list-check li:before {
+      content: "\2713"; position: absolute; left: 12px; top: 50%; transform: translateY(-50%);
+      color: #fff; font-weight: 700; font-size: 12px; width: 24px; height: 24px;
+      background: linear-gradient(135deg, #FF6B35 0%, #E85A28 100%); border-radius: 50%;
+      display: flex; align-items: center; justify-content: center; box-shadow: 0 3px 10px rgba(255,107,53,0.35);
+    }
+
+    .npser-cta-row { margin-top: 30px; display: flex; gap: 18px; justify-content: center; flex-wrap: wrap; }
+    .npser-btn {
+      display: inline-block; padding: 18px 42px; font-family: 'Poppins', sans-serif;
+      font-size: 18px; font-weight: 700; border-radius: 12px; text-decoration: none !important;
+      border-bottom: none !important; transition: all 0.3s ease; min-width: 260px;
+      text-align: center; line-height: 1.25; letter-spacing: 0.2px;
+    }
+    .npser-btn-primary {
+      background: linear-gradient(135deg, #FF6B35 0%, #E85A28 100%);
+      color: #ffffff !important; border: none; box-shadow: 0 8px 24px rgba(255,107,53,0.4);
+    }
+    .npser-btn-primary:hover { transform: translateY(-3px); box-shadow: 0 14px 32px rgba(255,107,53,0.55); color: #ffffff !important; }
+    .npser-btn-secondary {
+      background: #ffffff; color: #FF6B35 !important; border: 2px solid #FF6B35;
+      box-shadow: 0 4px 14px rgba(255,107,53,0.15);
+    }
+    .npser-btn-secondary:hover { background: #FF6B35; color: #ffffff !important; transform: translateY(-3px); box-shadow: 0 10px 26px rgba(255,107,53,0.4); }
+
+    .npser-faq-list { display: flex; flex-direction: column; gap: 16px; margin-top: 32px; }
+    .npser-faq-item {
+      background: #ffffff; padding: 28px 30px; border-radius: 14px;
+      border: 1px solid rgba(255,107,53,0.15); border-left: 5px solid #FF6B35;
+      transition: transform 0.3s ease, box-shadow 0.3s ease; box-shadow: 0 3px 14px rgba(0,0,0,0.12);
+    }
+    .npser-faq-item:hover { transform: translateX(6px); box-shadow: 0 12px 30px rgba(0,0,0,0.22); }
+    .npser-faq-item p { font-family: 'Inter', sans-serif; font-size: 16.5px; line-height: 1.8; color: #475569; margin: 0; }
+
+    @media (max-width: 768px) {
+      .npser-section { padding: 60px 20px; }
+      .npser-h2 { font-size: 30px; }
+      .npser-h2-sub { font-size: 22px !important; }
+      .npser-grid { grid-template-columns: 1fr; }
+      .npser-list-check { grid-template-columns: 1fr; }
+      .npser-btn { width: 100%; padding: 15px 20px; font-size: 16px; min-width: 100%; }
+      .npser-faq-h2 { font-size: 18px; }
+      .npser-card-h2 { font-size: 20px; }
+    }
+  </style>
+</head>
+
+<body class="bg-white text-slate-800 antialiased">
+
+<!-- ================= HEADER (From Live Website) ================= -->
+<div class="hidden md:block bg-navy text-slate-200 text-sm">
+  <div class="max-w-7xl mx-auto px-4 flex items-center justify-between py-2">
+    <div class="flex items-center gap-5">
+      <span class="inline-flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-accent animate-pulse"></span> 24/7 Emergency Connection</span>
+      <span class="text-slate-400">|</span>
+      <span class="inline-flex items-center gap-2">
+        <svg class="w-4 h-4 text-teal-400" fill="currentColor" viewBox="0 0 20 20"><path d="M2 4a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V4z"/></svg>
+        Mon–Sat 7am–7pm
+      </span>
+    </div>
+    <div class="flex items-center gap-5">
+      <span class="inline-flex items-center gap-1.5 text-amber-300">★★★★★ <span class="text-slate-300">Trusted Local Service</span></span>
+      <span class="text-slate-400">|</span>
+      <span class="text-slate-300">Licensed &amp; Insured Professionals</span>
+    </div>
+  </div>
+</div>
+
+<header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-slate-100 shadow-sm">
+  <nav class="max-w-7xl mx-auto px-4 flex items-center justify-between h-[68px]">
+    <a href="/" class="flex items-center gap-2.5 shrink-0">
+      <span class="grid place-items-center w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-teal text-white">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3c3.5 4.2 6 7.2 6 10.2A6 6 0 016 13.2C6 10.2 8.5 7.2 12 3z"/></svg>
+      </span>
+      <span class="leading-tight">
+        <span class="block font-display font-extrabold text-navy text-base sm:text-lg">Faucet Repair</span>
+        <span class="block text-[11px] tracking-wide text-slate-500 -mt-0.5">Huntington Beach, CA</span>
+      </span>
+    </a>
+    <ul class="hidden lg:flex items-center gap-1 text-[15px] font-medium text-slate-700">
+      <li><a class="px-3 py-2 rounded-lg hover:text-primary hover:bg-slate-50" href="#hero">Home</a></li>
+      <li class="relative group">
+        <a class='px-3 py-2 rounded-lg hover:text-primary hover:bg-slate-50 inline-flex items-center gap-1' href='/services'>
+          Services
+          <svg class="w-4 h-4 opacity-60" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" d="M6 9l6 6 6-6"/>
+          </svg>
+        </a>
+        <div class="absolute left-0 top-full pt-2 w-72 hidden group-hover:block z-50">
+          <div class="bg-white rounded-xl shadow-xl ring-1 ring-slate-100 p-2">
+            <a href="https://waterheaterrepairhuntingtonbeachca.com/tankless-water-heater-installation-huntington-beach-ca" class="block px-3 py-2 rounded-lg hover:bg-slate-50 text-sm text-slate-700 hover:text-primary">Tankless Water Heater Installation</a>
+            <a href="https://waterheaterrepairhuntingtonbeachca.com/water-heater-maintenance-huntington-beach-ca" class="block px-3 py-2 rounded-lg hover:bg-slate-50 text-sm text-slate-700 hover:text-primary">Water Heater Maintenance</a>
+            <a href="https://waterheaterrepairhuntingtonbeachca.com/water-heater-installation-huntington-beach-ca" class="block px-3 py-2 rounded-lg hover:bg-slate-50 text-sm text-slate-700 hover:text-primary">Water Heater Installation</a>
+            <a href="https://waterheaterrepairhuntingtonbeachca.com/water-heater-replacement-huntington-beach-ca" class="block px-3 py-2 rounded-lg hover:bg-slate-50 text-sm text-slate-700 hover:text-primary">Water Heater Replacement</a>
+            <a href="https://waterheaterrepairhuntingtonbeachca.com/tankless-water-heater-repair-huntington-beach-ca" class="block px-3 py-2 rounded-lg hover:bg-slate-50 text-sm text-slate-700 hover:text-primary">Tankless Water Heater Repair</a>
+            <a href="https://waterheaterrepairhuntingtonbeachca.com/" class="block px-3 py-2 rounded-lg hover:bg-slate-50 text-sm font-semibold text-primary">All Services →</a>
+          </div>
+        </div>
+      </li>
+      <li><a class="px-3 py-2 rounded-lg hover:text-primary hover:bg-slate-50" href="#process">Process</a></li>
+      <li><a class="px-3 py-2 rounded-lg hover:text-primary hover:bg-slate-50" href="#cost">Cost</a></li>
+    </ul>
+    <div class="flex items-center gap-2">
+      <a href="tel:+17144395780" class="hidden sm:inline-flex items-center gap-2 rounded-xl bg-accent hover:bg-accent-dark text-white font-semibold px-4 py-2.5 shadow-sm">
+        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M2 4a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V4z"/></svg>
+        (714) 439-5780
+      </a>
+      <button data-nav-toggle aria-expanded="false" aria-label="Open menu" class="lg:hidden grid place-items-center w-11 h-11 rounded-xl ring-1 ring-slate-200 text-navy">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </nav>
+  <div data-mobile-nav class="hidden lg:hidden border-t border-slate-100 bg-white">
+    <div class="px-4 py-3 space-y-1">
+      <a class="block px-3 py-2.5 rounded-lg hover:bg-slate-50 font-medium" href="#hero">Home</a>
+      <a class="block px-3 py-2.5 rounded-lg hover:bg-slate-50 font-medium" href="#services">Services</a>
+      <a class="block px-3 py-2.5 rounded-lg hover:bg-slate-50 font-medium" href="#process">Process</a>
+      <a class="block px-3 py-2.5 rounded-lg hover:bg-slate-50 font-medium" href="#cost">Cost</a>
+      <a href="tel:+17144395780" class="mt-2 flex items-center justify-center gap-2 rounded-xl bg-accent text-white font-semibold px-4 py-3">Call (714) 439-5780</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============ HERO SECTION ============ -->
+<div class="hp-hero" style="position: relative; width: 100%; min-height: 600px; display: flex; align-items: center; overflow: hidden; padding: 80px 30px; background: #1A2B4A;">
+  <div class="hp-hero-bg" style="position: absolute; inset: 0; background-image: url('https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=1920&q=80'); background-size: cover; background-position: center; z-index: 1;"></div>
+  <div class="hp-hero-overlay" style="position: absolute; inset: 0; background: linear-gradient(90deg, rgba(10, 20, 40, 0.92) 0%, rgba(15, 30, 56, 0.85) 45%, rgba(15, 30, 56, 0.55) 75%, rgba(15, 30, 56, 0.35) 100%); z-index: 2;"></div>
+
+  <div class="hp-hero-wrap" style="position: relative; z-index: 3; max-width: 1180px; width: 100%; margin: 0 auto; text-align: left; color: #ffffff;">
+    <div class="hp-ratings" style="display: flex; align-items: center; gap: 16px; margin-bottom: 32px; flex-wrap: wrap;">
+      <div class="hp-rating" style="display: inline-flex; align-items: center; gap: 10px; background: rgba(255,255,255,0.10); border: 1px solid rgba(255,255,255,0.18); padding: 8px 16px; border-radius: 30px; backdrop-filter: blur(10px);">
+        <span class="hp-rating-icon" style="display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; background: #ffffff; border-radius: 50%;">
+          <svg viewBox="0 0 48 48" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path fill="#FFC107" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"/><path fill="#FF3D00" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"/><path fill="#4CAF50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"/><path fill="#1976D2" d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"/></svg>
+        </span>
+        <div class="hp-rating-body" style="display: flex; flex-direction: column; line-height: 1.15;">
+          <div class="hp-rating-stars" style="font-size: 13px; color: #FFC107;">★★★★★</div>
+          <div class="hp-rating-score" style="font-size: 11.5px; color: #ffffff; font-weight: 600; margin-top: 3px;"><strong>4.9</strong> RATING</div>
+        </div>
+      </div>
+      <div class="hp-rating" style="display: inline-flex; align-items: center; gap: 10px; background: rgba(255,255,255,0.10); border: 1px solid rgba(255,255,255,0.18); padding: 8px 16px; border-radius: 30px; backdrop-filter: blur(10px);">
+        <span class="hp-rating-icon" style="display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; background: #ffffff; border-radius: 50%;">
+          <svg viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="12" fill="#1877F2"/><path fill="#FFFFFF" d="M16.671,9.998h-3.212V7.999c0-0.885,0.572-1.09,0.975-1.09h2.198V3.979l-3.028-0.011c-3.362,0-4.125,2.516-4.125,4.127v1.904H7.328v3.04h2.151v8.953h3.979v-8.953h2.917L16.671,9.998z"/></svg>
+        </span>
+        <div class="hp-rating-body" style="display: flex; flex-direction: column; line-height: 1.15;">
+          <div class="hp-rating-stars" style="font-size: 13px; color: #FFC107;">★★★★★</div>
+          <div class="hp-rating-score" style="font-size: 11.5px; color: #ffffff; font-weight: 600; margin-top: 3px;"><strong>4.9</strong> RATING</div>
+        </div>
+      </div>
+    </div>
+
+    <h1 style="font-family: 'Poppins', sans-serif; font-size: 3.5rem; font-weight: 800; line-height: 1.1; margin-bottom: 20px; color: #fff;">Faucet Repair in<br><span style="color: #FF6B35;">Huntington Beach, CA</span></h1>
+    
+    <p class="hp-desc" style="font-family: 'Inter', sans-serif; font-size: 18px; line-height: 1.75; color: #e2e8f0; margin: 0 0 28px 0; max-width: 680px;">
+      A dripping faucet can cause wastage of water as well as annoying noise and cause limescale build up around your sink. There are several problems that could occur with your faucet such as low water pressure, loose handles or problems with controlling the water temperature. Knowing what issues you are experiencing can help us provide the correct repair for your <strong>faucet repair Huntington Beach CA</strong> needs. We can replace worn parts, or fix any leaks depending on the design of your faucet, what the issue is and how worn your existing faucet is. If you need <strong>faucet repair in Huntington Beach</strong>, a professional can assess the issue and determine which repair is suitable.
+    </p>
+
+    <div class="hp-features" style="display: flex; align-items: center; gap: 36px; margin-bottom: 34px; flex-wrap: wrap;">
+      <div class="hp-feature" style="display: inline-flex; align-items: center; gap: 10px; color: #ffffff;">
+        <span class="hp-feature-icon" style="display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; background: rgba(255,107,53,0.18); border: 1.5px solid rgba(255,107,53,0.55); border-radius: 50%;">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15.5 14"/></svg>
+        </span>
+        <span class="hp-feature-text" style="font-family: 'Poppins', sans-serif; font-size: 14px; font-weight: 700; letter-spacing: 1.3px; text-transform: uppercase;">SAME DAY SERVICE</span>
+      </div>
+      <div class="hp-feature" style="display: inline-flex; align-items: center; gap: 10px; color: #ffffff;">
+        <span class="hp-feature-icon" style="display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; background: rgba(255,107,53,0.18); border: 1.5px solid rgba(255,107,53,0.55); border-radius: 50%;">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+        </span>
+        <span class="hp-feature-text" style="font-family: 'Poppins', sans-serif; font-size: 14px; font-weight: 700; letter-spacing: 1.3px; text-transform: uppercase;">LICENSED &amp; INSURED</span>
+      </div>
+      <div class="hp-feature" style="display: inline-flex; align-items: center; gap: 10px; color: #ffffff;">
+        <span class="hp-feature-icon" style="display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; background: rgba(255,107,53,0.18); border: 1.5px solid rgba(255,107,53,0.55); border-radius: 50%;">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+        </span>
+        <span class="hp-feature-text" style="font-family: 'Poppins', sans-serif; font-size: 14px; font-weight: 700; letter-spacing: 1.3px; text-transform: uppercase;">NO MESS LEFT BEHIND</span>
+      </div>
+    </div>
+
+    <div class="hp-action-row" style="display: flex; align-items: center; gap: 22px; flex-wrap: wrap;">
+      <a href="tel:+17144395780" class="hp-call-btn" style="display: inline-flex; align-items: center; gap: 12px; padding: 20px 36px; font-family: 'Poppins', sans-serif; font-size: 17px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; border-radius: 50px; background: linear-gradient(135deg, #FF6B35 0%, #E85A28 100%); color: #ffffff !important; text-decoration: none !important; border: none; box-shadow: 0 10px 30px rgba(255,107,53,0.5); transition: all 0.3s ease;">
+        <span class="hp-call-icon"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+        <span class="hp-call-text">CALL (714) 439-5780</span>
+        <span class="hp-call-arrow">→</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ============ TRUST BAR ============ -->
+<section class="npser-section" style="background: #ffffff; padding: 0; border-bottom: 1px solid #e6ecf3;">
+  <div style="max-width: 1240px; margin: 0 auto; display: grid; grid-template-columns: repeat(4, 1fr);">
+    <div style="padding: 34px 18px; text-align: center; border-right: 1px solid #e6ecf3;">
+      <div style="font-size: 26px; margin-bottom: 10px;">⚡</div>
+      <div style="font-family: 'Poppins', sans-serif; font-size: 28px; font-weight: 700; color: #1A2B4A;">Fast</div>
+      <div style="font-size: 15px; color: #64748b; font-weight: 500;">Call Connection</div>
+    </div>
+    <div style="padding: 34px 18px; text-align: center; border-right: 1px solid #e6ecf3;">
+      <div style="font-size: 26px; margin-bottom: 10px;">🤝</div>
+      <div style="font-family: 'Poppins', sans-serif; font-size: 28px; font-weight: 700; color: #1A2B4A;">Friendly</div>
+      <div style="font-size: 15px; color: #64748b; font-weight: 500;">Customer Support</div>
+    </div>
+    <div style="padding: 34px 18px; text-align: center; border-right: 1px solid #e6ecf3;">
+      <div style="font-size: 26px; margin-bottom: 10px;">📍</div>
+      <div style="font-family: 'Poppins', sans-serif; font-size: 28px; font-weight: 700; color: #1A2B4A;">Local</div>
+      <div style="font-size: 15px; color: #64748b; font-weight: 500;">Serving Huntington Beach, CA</div>
+    </div>
+    <div style="padding: 34px 18px; text-align: center;">
+      <div style="font-size: 26px; margin-bottom: 10px;">✨</div>
+      <div style="font-family: 'Poppins', sans-serif; font-size: 28px; font-weight: 700; color: #1A2B4A;">Simple</div>
+      <div style="font-size: 15px; color: #64748b; font-weight: 500;">Process</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COMMON ISSUES ============ -->
+<section class="npser-section" style="background: #F8F9FA;">
+  <div class="npser-wrap">
+    <h2 class="npser-h2 npser-h2-dark">Common Issues With Faucets</h2>
+    <p class="npser-p">There are several moving parts and connections to water in your faucet that can become worn over time. Knowing what the issue is can help us provide the correct repair. If you are looking for <strong>faucet repair Huntington Beach</strong>, describing the symptoms can help a professional identify the likely cause.</p>
+    
+    <h3 class="npser-h2-sub">Leaking/Dripping</h3>
+    <p class="npser-p">If your faucet is still dripping after turning off the handle then there could be a worn cartridge, damaged washer, damaged seal or a problem with the valve. This depends on your faucet design.</p>
+    <p class="npser-p">You could also experience leaks around the handle, base of the faucet, connections or underneath your sink. This should be different to any leaks coming from the spout.</p>
+    <p class="npser-p">Even a small leak should be attended to. Water dripping around the base of your faucet or in your cabinet can cause damage. If the leak is coming from a supply line or connection under your sink then turning off the relevant shutoff valve may help prevent any water damage. If the leak needs urgent attention, searching for an <strong>emergency plumber near me</strong> may help you find a professional. Confirm the provider's availability before arranging a visit.</p>
+
+    <h3 class="npser-h2-sub">Low Water Pressure/Uneven Flow</h3>
+    <p class="npser-p">If the water coming from your faucet is not flowing as it normally would then there could be a blockage to your aerator, limescale build up, a partially closed shutoff valve or a blockage in your supply.</p>
+    <p class="npser-p">The aerator is a small attachment on the end of many spouts. This helps shape the water flow and can cause build up of limescale or debris. Sometimes cleaning or replacing with a compatible replacement aerator can help.</p>
+    <p class="npser-p">If several faucets are suffering from low pressure then this could be an issue with your home's water supply. A professional can help identify what the issue is. Searching for <strong>plumber services near me</strong> may help you find a provider who can assess the faucet and water supply.</p>
+
+    <h3 class="npser-h2-sub">Loose Handle</h3>
+    <p class="npser-p">If your handle is becoming loose, sticking or is difficult to turn then there could be a loose fixing, worn parts or damaged handle. Continued force can cause more issues.</p>
+    <p class="npser-p">Some handles can be tightened or repaired however some will need replacement parts specific to your model. If your handle is struggling to control the water then the valve inside could need checking.</p>
+
+    <h3 class="npser-h2-sub">Noisy Faucet/Water Temperature Issues</h3>
+    <p class="npser-p">If your faucet is making whistling, rattling or strange noises then there could be a blockage, loose parts or another issue. If it is only making a noise when a particular fixture is being used then this can help identify the cause.</p>
+    <p class="npser-p">If you are having issues with controlling the hot and cold water then there could be an issue with the cartridge, mixing valve or water supply. Single handle faucets can suffer from a worn cartridge causing issues with the flow and temperature. Other designs may have separate valves or parts.</p>
+    <p class="npser-p">If the water is suddenly becoming too hot or cold then this could be an issue with your water heater or overall water supply.</p>
+  </div>
+</section>
+
+<!-- ============ REASONS FOR ISSUES ============ -->
+<section class="npser-section" style="background: #ffffff;">
+  <div class="npser-wrap">
+    <h2 class="npser-h2 npser-h2-dark">Reasons For Issues With Your Faucet</h2>
+    <p class="npser-p">There are many reasons why your faucet may be having issues. Knowing what the issue could be can help us provide the correct repair.</p>
+    <ul class="npser-list-check" style="grid-template-columns: 1fr 1fr; gap: 12px;">
+        <li><strong>Worn Parts:</strong> Cartridges, washers, O rings and seals can become worn.</li>
+        <li><strong>Limescale Build Up:</strong> Limescale can build up around your aerator and inside your faucet.</li>
+        <li><strong>Loose Connections:</strong> Movement, installation issues or worn parts can cause leaks under your sink.</li>
+        <li><strong>Corrosion/Damaged Parts:</strong> Older faucets can have parts that are difficult to remove or not working correctly.</li>
+        <li><strong>Over Tightening:</strong> Over tightening can cause issues with parts inside.</li>
+        <li><strong>Water Supply:</strong> Low pressure, partially closed valves or blockages can cause issues.</li>
+    </ul>
+    <p class="npser-p" style="margin-top: 20px;">There could be several reasons why your faucet is having issues. For example one could be a worn cartridge causing the spout to drip and another could be a damaged valve seat. A professional should be able to identify what the likely cause is.</p>
+  </div>
+</section>
+
+<!-- ============ FAUCET REPAIRS ============ -->
+<section class="npser-section" style="background: #F8F9FA;">
+  <div class="npser-wrap">
+    <h2 class="npser-h2 npser-h2-dark">Faucet Repairs</h2>
+    <p class="npser-p">Faucet repairs will help you get a steady flow of water, stop any leaks and ensure your handle and valve are working correctly. The repair will depend on the brand, design, age and condition of your faucet. For <strong>faucet repair Huntington Beach CA</strong>, the appropriate solution will depend on the problem and the parts required.</p>
+    
+    <h3 class="npser-h2-sub">Cartridge/Washer Replacement</h3>
+    <p class="npser-p">Many modern faucets use cartridges to help control the water flow and temperature. Some faucets use compression valves, washers or other parts.</p>
+    <p class="npser-p">If there are worn parts inside your faucet then replacing the correct part can stop your faucet from dripping or improve the handle. You may need to dismantle your faucet after turning off the water supply safely. Our technician can then check the relevant parts and see if a replacement is suitable.</p>
+    <p class="npser-p">It is important to use a compatible part. Not all cartridges and seals will be compatible.</p>
+
+    <h3 class="npser-h2-sub">Fixing Leak Issues</h3>
+    <p class="npser-p">Leaking from the base or under your sink could be due to issues with your supply hoses, threading, fixings or seals. The issue should be addressed to stop the water.</p>
+    <p class="npser-p">Over tightening can cause issues with the threading, fixings or plastic. If your supply hose is damaged or connections are damaged then it may be more suitable to replace.</p>
+    <p class="npser-p">If your faucet body is cracked or heavily corroded then it may need replacing.</p>
+
+    <h3 class="npser-h2-sub">Low Flow/Clogged Aerator</h3>
+    <p class="npser-p">Often the best place to start with a weak or uneven flow of water is to check your aerator. This can cause issues with the flow as there can be build up of limescale or small particles.</p>
+    <p class="npser-p">Depending on your faucet design the aerator can be removed and cleaned. If this does not help then there could be an issue with a blocked cartridge, supply or other issue.</p>
+    <p class="npser-p">A professional can help identify what the issue is.</p>
+
+    <h3 class="npser-h2-sub">Kitchen/Bathroom Faucet Repairs</h3>
+    <p class="npser-p">Kitchen faucets can have various designs such as pull down sprays, pull out hoses, side sprays or separate filters. Issues can include leaking from the base, damaged spray hose, faulty diverter or worn cartridge. If you need <strong>kitchen faucet repair Huntington Beach CA</strong>, the repair will depend on the faucet design and the cause of the problem.</p>
+    <p class="npser-p">Bathroom faucets can have a single handle, double handle, widespread or centreset design. Repairs can include cartridges, washers, aerators, handles or supply. For <strong>bathroom faucet repair Huntington Beach CA</strong>, a professional can inspect the relevant parts and connections.</p>
+    <p class="npser-p">Laundry/utility sink faucets can suffer from wear due to frequent use. Knowing what type of faucet you have can help find the correct parts. If you need <strong>faucet sink repair Huntington Beach</strong>, explain whether the issue affects a kitchen sink, bathroom sink or utility sink so the appropriate repair can be assessed.</p>
+  </div>
+</section>
+
+<!-- ============ WHAT TO EXPECT ============ -->
+<section id="process" class="npser-section" style="background: #ffffff;">
+  <div class="npser-wrap">
+    <h2 class="npser-h2 npser-h2-dark">What To Expect</h2>
+    <p class="npser-p">A typical repair will start with knowing what issues you are having. Depending on the issue you could expect:</p>
+    <div style="display: flex; flex-direction: column; gap: 16px; margin-top: 24px;">
+        <div style="background: #F8F9FA; padding: 20px; border-radius: 12px; border-left: 4px solid #FF6B35;">
+            <strong style="color: #1A2B4A; font-size: 18px;">Describe Issues</strong>
+            <p class="npser-p" style="margin: 8px 0 0 0;">Tell us what issues you are having with your faucet. Are you having issues with dripping, leaking from the base, low pressure, noisy or difficult to control?</p>
+        </div>
+        <div style="background: #F8F9FA; padding: 20px; border-radius: 12px; border-left: 4px solid #FF6B35;">
+            <strong style="color: #1A2B4A; font-size: 18px;">Inspect</strong>
+            <p class="npser-p" style="margin: 8px 0 0 0;">Our technician will check the handle, spout, aerator, visible connections and accessible supply.</p>
+        </div>
+        <div style="background: #F8F9FA; padding: 20px; border-radius: 12px; border-left: 4px solid #FF6B35;">
+            <strong style="color: #1A2B4A; font-size: 18px;">Identify Cause</strong>
+            <p class="npser-p" style="margin: 8px 0 0 0;">We will identify if it looks like there is an issue with a replaceable part, connection or water supply.</p>
+        </div>
+        <div style="background: #F8F9FA; padding: 20px; border-radius: 12px; border-left: 4px solid #FF6B35;">
+            <strong style="color: #1A2B4A; font-size: 18px;">Discuss Repairs</strong>
+            <p class="npser-p" style="margin: 8px 0 0 0;">We will talk through what we will do, what compatible parts we will use and what the charges will be. We will then get permission to complete the repairs.</p>
+        </div>
+        <div style="background: #F8F9FA; padding: 20px; border-radius: 12px; border-left: 4px solid #FF6B35;">
+            <strong style="color: #1A2B4A; font-size: 18px;">Complete Repairs</strong>
+            <p class="npser-p" style="margin: 8px 0 0 0;">We will turn off the relevant water supply and replace/fix the relevant part. We will then put everything back together.</p>
+        </div>
+        <div style="background: #F8F9FA; padding: 20px; border-radius: 12px; border-left: 4px solid #FF6B35;">
+            <strong style="color: #1A2B4A; font-size: 18px;">Test</strong>
+            <p class="npser-p" style="margin: 8px 0 0 0;">We will test your faucet to ensure it is working, flowing correctly, controlling the temperature and there are no leaks from visible connections.</p>
+        </div>
+    </div>
+    <p class="npser-p" style="margin-top: 24px;">If your faucet is old or has parts that are no longer available we may recommend looking at replacing it. Ask us to explain the issue and what we will do to help you make an informed choice. If you need a <strong>same day plumber near me</strong>, confirm that the provider can attend within your required timeframe. A <strong>24 hour plumber near me</strong>, <strong>24 hr plumber near me</strong>, or <strong>24/7 plumber</strong> search may help you find providers advertising extended hours, but actual availability should be confirmed directly. Searching for a <strong>24 7 plumber near me</strong> may also show providers offering round-the-clock service.</p>
+  </div>
+</section>
+
+<!-- ============ REPAIR OR REPLACE ============ -->
+<section class="npser-section" style="background: #F8F9FA;">
+  <div class="npser-wrap">
+    <h2 class="npser-h2 npser-h2-dark">Should I Repair Or Replace My Faucet?</h2>
+    <p class="npser-p">If your faucet is in good condition and there is an issue with a replaceable part then it may be a good idea to repair. If there is damage to the body, parts are not available or it keeps failing then it may be better to replace.</p>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 24px;">
+        <div style="background: #fff; padding: 24px; border-radius: 12px; border-top: 4px solid #22c55e;">
+            <h4 style="color: #1A2B4A; font-size: 20px; margin-bottom: 12px; font-family: 'Poppins', sans-serif;">Reasons To Repair:</h4>
+            <ul class="npser-list-check" style="grid-template-columns: 1fr; gap: 8px; margin: 0;">
+                <li>Leak from a replaceable part (cartridge, washer, seal).</li>
+                <li>Handle or aerator requires a compatible replacement part.</li>
+                <li>Body and connections are in a usable condition.</li>
+                <li>Cost of repairs are reasonable.</li>
+            </ul>
+        </div>
+        <div style="background: #fff; padding: 24px; border-radius: 12px; border-top: 4px solid #ef4444;">
+            <h4 style="color: #1A2B4A; font-size: 20px; margin-bottom: 12px; font-family: 'Poppins', sans-serif;">Reasons To Replace:</h4>
+            <ul class="npser-list-check" style="grid-template-columns: 1fr; gap: 8px; margin: 0;">
+                <li>Cracked, heavily corroded or damaged body.</li>
+                <li>No suitable internal parts available.</li>
+                <li>Multiple parts have failed or it keeps failing.</li>
+                <li>You want a different style or extra features.</li>
+            </ul>
+        </div>
+    </div>
+    <p class="npser-p" style="margin-top: 24px;">Before replacing check how many mounting holes there are, what type of sink you have, size of faucet and what type of supply you have. A new faucet may have different requirements for a spray or filter.</p>
+    <p class="npser-p">Ensure your new faucet will be compatible with your existing sink and water connections. If there are changes to the connections or mounting then discuss this with us. If <strong>i need a plumber</strong> to help decide between repair and replacement, I should explain the problem and ask for the available options and associated costs. Before choosing a <strong>licensed plumber near me</strong>, verify the provider's credentials where applicable.</p>
+  </div>
+</section>
+
+<!-- ============ COST ============ -->
+<section id="cost" class="npser-section" style="background: #ffffff;">
+  <div class="npser-wrap">
+    <h2 class="npser-h2 npser-h2-dark">Cost Of Repairs</h2>
+    <p class="npser-p">The cost of repairing your faucet in Huntington Beach will depend on the issue you are having. Simple part replacements may not take as much time as identifying why it is leaking or fixing a hard to reach connection.</p>
+    <p class="npser-p"><strong>Common reasons for costs:</strong></p>
+    <ul class="npser-list-check" style="grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 20px;">
+        <li><strong>Type Of Issue:</strong> Dripping cartridge, leaking supply and damaged valve will all need different work done.</li>
+        <li><strong>Specialist/Unusual Parts:</strong> Specialist or discontinued parts can be harder to source.</li>
+        <li><strong>Design:</strong> Some faucets can be more complicated to take apart and put back together.</li>
+        <li><strong>Space:</strong> There may be little space under your sink.</li>
+        <li><strong>Additional Water Issues:</strong> The leak or low pressure may be caused by something else.</li>
+        <li><strong>Installation Of New Faucet:</strong> Installing a new faucet can be costly.</li>
+    </ul>
+    <p class="npser-p">When asking for an estimate ask if this includes labour, parts, diagnosis and any additional water issues. If you are being advised to replace then ask what the full cost of installation is.</p>
+  </div>
+</section>
+
+<!-- ============ PREVENTION ============ -->
+<section class="npser-section" style="background: #F8F9FA;">
+  <div class="npser-wrap">
+    <h2 class="npser-h2 npser-h2-dark">How To Avoid Issues</h2>
+    <p class="npser-p">Keeping on top of your faucet can help avoid unnecessary leaks and issues.</p>
+    <ul class="npser-list-check" style="grid-template-columns: 1fr; gap: 12px; margin-bottom: 20px;">
+        <li>Clean your aerators when they start to cause issues with the water flow due to limescale.</li>
+        <li>Don't force your faucets if they are stiff. Don't over tighten.</li>
+        <li>Check for any signs of dampness on visible connections and under your sink.</li>
+        <li>Use cleaning products that are suitable for your faucet finish. Follow the manufacturers guidelines.</li>
+        <li>Don't let your faucet drip continuously.</li>
+        <li>Keep any information on your model of faucet and any relevant installation documents.</li>
+    </ul>
+    <p class="npser-p">If your faucet suddenly starts to leak then stop using it. If you can safely turn off the relevant shutoff valve then do so. If you cannot turn off the valve or it is still leaking then ask for a professional to help to minimise any potential water damage.</p>
+  </div>
+</section>
+
+<!-- ============ RESIDENTIAL & COMMERCIAL ============ -->
+<section class="npser-section" style="background: #ffffff;">
+  <div class="npser-wrap">
+    <h2 class="npser-h2 npser-h2-dark">Residential/Commercial Faucet Repairs</h2>
+    <p class="npser-p">Issues with your faucets can occur in your home, rented property, office or other building with kitchens or washrooms. The correct repair will depend on the type of faucet, how often it is used and the condition of the water connections. A <strong>residential plumber</strong> may handle household faucet repairs, while a <strong>commercial plumber</strong> may be suitable for faucets in business premises. If you are searching for a <strong>commercial plumber near me</strong>, confirm that the provider works on the type of property and faucet involved.</p>
+
+    <h3 class="npser-h2-sub">Residential Faucet Repairs</h3>
+    <p class="npser-p">Issues with your kitchen faucet can cause issues when cooking. Issues with your bathroom faucet can cause inconvenience. Repairs should be made to fix the cause of the issue and check the connections.</p>
+    <p class="npser-p">When arranging maintenance for your rented property it can be useful to know what the issue is and where the leak is coming from. This will help our professional understand what the issue is and what faucet is affected.</p>
+
+    <h3 class="npser-h2-sub">Commercial Faucet Repairs</h3>
+    <p class="npser-p">Commercial properties can have faucets that are used frequently throughout the day. If your faucet is faulty this can cause issues accessing sinks in staff kitchens, washrooms or other areas.</p>
+    <p class="npser-p">The repair could include replacing worn parts, fixing leaks or flow issues. The repair should depend on the type of faucet and water connections in your property. Ensure the professional you choose offers repairs for the type of faucet and property.</p>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="npser-section" style="background: linear-gradient(135deg, #1A2B4A 0%, #243B5E 100%);">
+  <div class="npser-wrap">
+    <h2 class="npser-h2 npser-h2-orange" style="text-align:center;">FAQ</h2>
+    <div class="npser-faq-list">
+      <div class="npser-faq-item">
+        <h2 class="npser-faq-h2">When should I call a plumber for faucet repairs in Huntington Beach, CA?</h2>
+        <p>If your faucet is dripping continuously, leaking from underneath, suffering from low pressure, strange noises or is difficult to use then it may be a good idea to get a professional to repair it. Continuous leaks should be fixed to avoid damaging the surrounding cabinets and faucets. If you are looking for <strong>faucet repair Huntington Beach</strong>, arrange an assessment and describe the symptoms.</p>
+      </div>
+      <div class="npser-faq-item">
+        <h2 class="npser-faq-h2">Why is my faucet dripping?</h2>
+        <p>There could be a worn cartridge, washer, seal or valve part causing it not to fully shut. This will depend on your faucet design.</p>
+      </div>
+      <div class="npser-faq-item">
+        <h2 class="npser-faq-h2">Can I repair my dripping faucet?</h2>
+        <p>Often yes! If your faucet body is in good condition and you can find compatible parts then replacing your cartridge, washer or seal can help. If your faucet is damaged or heavily corroded then it may be better to replace.</p>
+      </div>
+      <div class="npser-faq-item">
+        <h2 class="npser-faq-h2">Why is my faucet suffering from low pressure?</h2>
+        <p>There could be a blockage to your aerator, limescale, partially closed shutoff valve or blockage in your supply. If several faucets are suffering from low pressure then it could be an issue with your faucet.</p>
+      </div>
+      <div class="npser-faq-item">
+        <h2 class="npser-faq-h2">How much will repairs cost in Huntington Beach?</h2>
+        <p>The cost will depend on the issue, what parts are needed, design of your faucet, accessibility and labour. Ask for an estimate based on your specific issue. Ask if there are any additional costs for any water issues or replacement parts.</p>
+      </div>
+      <div class="npser-faq-item">
+        <h2 class="npser-faq-h2">Should I repair my old faucet?</h2>
+        <p>If there is just an issue with a replaceable part then it may be suitable to repair. If it is damaged, parts are not available or it is becoming expensive to repair then it may be better to replace. Compare your options.</p>
+      </div>
+      <div class="npser-faq-item">
+        <h2 class="npser-faq-h2">Can my faucet leak underneath?</h2>
+        <p>Yes! There could be a leak from your supply hoses, shutoff connections, faucet fixings or other connections. It is important to identify what the issue is and repair the correct fitting/part.</p>
+      </div>
+      <div class="npser-faq-item">
+        <h2 class="npser-faq-h2">Can a plumber repair my kitchen and bathroom faucet?</h2>
+        <p>A plumber may be able to repair both however confirm what they can do. Kitchen faucets can have spray hoses and diverters. Bathrooms can have different valve and fixing designs.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<section class="npser-section" style="background: linear-gradient(135deg, #0F1E38 0%, #1A2B4A 100%);">
+  <div class="npser-wrap">
+    <h2 class="npser-h2 npser-h2-orange" style="text-align:center;">Request Faucet Repairs in Huntington Beach, CA</h2>
+    <p class="npser-p npser-p-light" style="text-align:center; max-width: 800px; margin: 0 auto 20px auto;">Not all faucets that are leaking or faulty will need to be replaced. The correct solution will depend on the cause of the issue, condition of your faucet and if there are compatible parts.</p>
+    <p class="npser-p npser-p-light" style="text-align:center; max-width: 800px; margin: 0 auto 20px auto;">If you need <strong>faucet repairs in Huntington Beach, CA</strong> or <strong>faucet repair huntington beach</strong>, then request an assessment. Tell us what issues you are having. Ask what repairs we recommend, what parts will be used and how much it will cost in total. For <strong>shower faucet repair Huntington Beach</strong>, describe whether the problem is with the shower handle, valve, water flow or temperature so the provider can confirm whether they handle that repair.</p>
+    <p class="npser-p npser-p-light" style="text-align:center; max-width: 800px; margin: 0 auto 30px auto;">This website can help put you in contact with an independent professional. Confirm they can help, what they can do and their costs.</p>
+    
+    <div class="npser-cta-row">
+      <a href="tel:+17144395780" class="npser-btn npser-btn-primary">📞 Call for Faucet Repair</a>
+      <a href="#contact" class="npser-btn npser-btn-secondary">Request a Quote</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER (From Live Website) ================= -->
+<footer class="bg-navy text-slate-300 border-t border-white/10">
+  <div class="max-w-7xl mx-auto px-4 py-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+    <div>
+      <div class="flex items-center gap-2.5">
+        <span class="grid place-items-center w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-teal text-white">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3c3.5 4.2 6 7.2 6 10.2A6 6 0 016 13.2C6 10.2 8.5 7.2 12 3z"/></svg>
+        </span>
+        <span class="font-display font-extrabold text-white text-lg">Faucet Repair Huntington Beach</span>
+      </div>
+      <p class="mt-4 text-sm text-slate-400">Your trusted connection to faucet repair professionals serving Huntington Beach, CA and surrounding areas.</p>
+      <p class="mt-4 text-sm"><span class="text-amber-300">★★★★★</span> Trusted Local Service</p>
+    </div>
+    <div>
+      <h3 class="font-display font-bold text-white text-lg">Services</h3>
+      <ul class="mt-4 space-y-2 text-sm">
+        <li><a class='hover:text-teal-400' href='https://waterheaterrepairhuntingtonbeachca.com/'>Water Heater Repair</a></li>
+        <li><a class='hover:text-teal-400' href='https://waterheaterrepairhuntingtonbeachca.com/water-heater-installation-huntington-beach-ca'>Water Heater Installation</a></li>
+        <li><a class='hover:text-teal-400' href='https://waterheaterrepairhuntingtonbeachca.com/water-heater-replacement-huntington-beach-ca'>Water Heater Replacement</a></li>
+        <li><a class='hover:text-teal-400' href='https://waterheaterrepairhuntingtonbeachca.com/tankless-water-heater-installation-huntington-beach-ca'>Tankless Water Heaters Installation</a></li>
+        <li><a class='hover:text-teal-400' href='https://waterheaterrepairhuntingtonbeachca.com/tankless-water-heater-repair-huntington-beach-ca'>Tankless Water Heaters Repair</a></li>
+        <li><a class='hover:text-teal-400' href='https://waterheaterrepairhuntingtonbeachca.com/water-heater-maintenance-huntington-beach-ca'>Water Heater Maintenance</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="font-display font-bold text-white text-lg">Quick Links</h3>
+      <ul class="mt-4 space-y-2 text-sm">
+        <li><a class="hover:text-teal-400" href="#process">Our Process</a></li>
+        <li><a class="hover:text-teal-400" href="#cost">Pricing & Cost</a></li>
+        <li><a class="hover:text-teal-400" href="#contact">Contact Us</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="font-display font-bold text-white text-lg">Get In Touch</h3>
+      <ul class="mt-4 space-y-3 text-sm">
+        <li class="flex items-start gap-2"><svg class="w-5 h-5 text-teal-400 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M2 4a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V4z"/></svg><a class="hover:text-teal-400 font-semibold text-white" href="tel:+17144395780">(714) 439-5780</a></li>
+        <li class="flex items-start gap-2"><svg class="w-5 h-5 text-teal-400 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/></svg><span>Huntington Beach, CA 92648</span></li>
+        <li class="flex items-start gap-2"><svg class="w-5 h-5 text-teal-400 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" d="M12 6v6l4 2M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg><span>Mon–Sat 7am–7pm · 24/7 Emergency</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 py-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-400">
+      <p>© <span id="year">2026</span> Faucet Repair Huntington Beach. All rights reserved.</p>
+      <nav class="flex items-center gap-4" aria-label="Footer">
+        <a class="hover:text-teal-400" href="#services">Services</a>
+        <a class="hover:text-teal-400" href="#process">Process</a>
+        <a class="hover:text-teal-400" href="#">Disclaimer</a>
+        <a class="hover:text-teal-400" href="tel:+17144395780">Call</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<!-- STICKY MOBILE CALL BAR -->
+<div class="md:hidden fixed bottom-0 inset-x-0 z-40 bg-white border-t border-slate-200 shadow-[0_-6px_20px_-10px_rgba(0,0,0,0.25)]">
+  <div class="grid grid-cols-2 divide-x divide-slate-200">
+    <a href="tel:+17144395780" class="flex items-center justify-center gap-2 py-3.5 font-semibold text-navy">
+      <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20"><path d="M2 4a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V4z"/></svg>
+      Call Now
+    </a>
+    <a href="tel:+17144395780" class="flex items-center justify-center gap-2 py-3.5 font-semibold text-white bg-accent">Free Quote</a>
+  </div>
+</div>
+
+<script>
+  // Mobile nav toggle
+  const navToggle = document.querySelector('[data-nav-toggle]');
+  const mobileNav = document.querySelector('[data-mobile-nav]');
+  if (navToggle && mobileNav) {
+    navToggle.addEventListener('click', function() {
+      mobileNav.classList.toggle('hidden');
+      this.setAttribute('aria-expanded', !mobileNav.classList.contains('hidden'));
+    });
+  }
+  // Auto year
+  const yearEl = document.getElementById('year');
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+  // Smooth scroll
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', function(e) {
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        if (mobileNav && !mobileNav.classList.contains('hidden')) {
+          mobileNav.classList.add('hidden');
+          navToggle.setAttribute('aria-expanded', 'false');
+        }
+      }
+    });
+  });
+
+  // Reveal on scroll
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>

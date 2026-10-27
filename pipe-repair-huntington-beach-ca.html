@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0f2b4a" />
+  <title>Pipe Repair in Huntington Beach, CA | Professional Plumbing Services</title>
+  <meta name="description" content="Professional pipe repair in Huntington Beach, CA. Leaky pipe repair, burst pipe repair & slab leak detection. Call (714) 439-5780 today!" />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&family=Poppins:wght@500;600;700;800;900&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: { DEFAULT: "#0f2b4a", 800: "#1a3a5c", 700: "#234b6e" },
+            primary: { DEFAULT: "#1a5f8a", 600: "#1473a8", 500: "#1a8bc4" },
+            accent: { DEFAULT: "#d97706", dark: "#b45309", light: "#f59e0b" },
+            teal: { DEFAULT: "#0d9488", 500: "#14b8a6" }
+          },
+          fontFamily: {
+            sans: ["Inter", "system-ui", "sans-serif"],
+            display: ["Plus Jakarta Sans", "Inter", "sans-serif"]
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
+    .reveal.in { opacity: 1; transform: translateY(0); }
+    .eyebrow-line::after {
+      content: ""; display: block; width: 48px; height: 3px;
+      background: linear-gradient(90deg, #d97706, #14b8a6);
+      margin: 12px auto 0; border-radius: 2px;
+    }
+
+    /* ============================================
+       CUSTOM STYLES FOR PIPE REPAIR SECTIONS
+       ============================================ */
+    .npser-wrap { max-width: 1180px; margin: 0 auto; width: 100%; }
+    .npser-section { padding: 80px 30px; font-family: 'Inter', sans-serif; }
+    
+    .npser-h2 {
+      font-family: 'Poppins', sans-serif; font-size: 40px; font-weight: 700;
+      line-height: 1.25; letter-spacing: -0.6px; margin: 0 0 14px 0; position: relative;
+    }
+    .npser-h2:after {
+      content: ""; display: block; width: 60px; height: 4px;
+      background: #FF6B35; border-radius: 2px; margin-top: 14px;
+    }
+    .npser-h2-dark { color: #1A2B4A; }
+    .npser-h2-orange { color: #FF6B35; }
+    .npser-h2-orange:after { background: #FF6B35; }
+
+    .npser-h2-sub {
+      font-size: 26px !important; font-weight: 600 !important; color: #1A2B4A !important;
+      margin: 32px 0 10px 0 !important; padding-left: 16px; border-left: 5px solid #FF6B35;
+      line-height: 1.3; letter-spacing: -0.3px;
+    }
+    .npser-h2-sub:after { display: none !important; }
+
+    .npser-card-h2 {
+      font-family: 'Poppins', sans-serif; font-size: 22px; font-weight: 600;
+      color: #1A2B4A; margin: 0 0 12px 0; line-height: 1.3; letter-spacing: -0.2px;
+    }
+
+    .npser-faq-h2 {
+      font-family: 'Poppins', sans-serif; font-size: 21px; font-weight: 600;
+      color: #1A2B4A; margin: 0 0 10px 0; line-height: 1.4; position: relative; padding-left: 40px;
+    }
+    .npser-faq-h2:before {
+      content: "?"; position: absolute; left: 0; top: 50%; transform: translateY(-50%);
+      width: 28px; height: 28px; background: linear-gradient(135deg, #FF6B35 0%, #E85A28 100%);
+      color: #ffffff; border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      font-size: 16px; font-weight: 700; font-family: 'Poppins', sans-serif;
+      box-shadow: 0 3px 10px rgba(255,107,53,0.4);
+    }
+
+    .npser-p {
+      font-family: 'Inter', sans-serif; font-size: 18px; line-height: 1.8;
+      margin: 0 0 16px 0; color: #334155; font-weight: 400;
+    }
+    .npser-p-light { color: #e2e8f0; }
+
+    .npser-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(330px, 1fr)); gap: 24px; }
+    .npser-card {
+      background: #ffffff; padding: 32px 28px; border-radius: 14px;
+      border: 1px solid #e6ecf3; border-top: 4px solid #FF6B35;
+      transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+      box-shadow: 0 2px 10px rgba(26,43,74,0.05); display: flex; flex-direction: column; position: relative;
+    }
+    .npser-card:hover { transform: translateY(-6px); box-shadow: 0 20px 40px rgba(26,43,74,0.12); border-color: #d5dde6; }
+    .npser-card p { font-family: 'Inter', sans-serif; font-size: 16px; line-height: 1.75; color: #475569; margin: 0 0 14px 0; }
+    .npser-card p:last-of-type { margin-bottom: 20px; }
+
+    .npser-list-check {
+      list-style: none; padding: 0; margin: 10px 0 20px;
+      display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px 18px;
+    }
+    .npser-list-check li {
+      font-family: 'Inter', sans-serif; font-size: 15.5px; color: #334155;
+      padding: 14px 16px 14px 48px; position: relative; font-weight: 500;
+      background: #f8fafc; border-radius: 10px; border-left: 4px solid #FF6B35;
+      line-height: 1.5; transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .npser-list-check li:hover { transform: translateX(4px); box-shadow: 0 6px 16px rgba(26,43,74,0.06); }
+    .npser-list-check li:before {
+      content: "\2713"; position: absolute; left: 12px; top: 50%; transform: translateY(-50%);
+      color: #fff; font-weight: 700; font-size: 12px; width: 24px; height: 24px;
+      background: linear-gradient(135deg, #FF6B35 0%, #E85A28 100%); border-radius: 50%;
+      display: flex; align-items: center; justify-content: center; box-shadow: 0 3px 10px rgba(255,107,53,0.35);
+    }
+
+    .npser-cta-row { margin-top: 30px; display: flex; gap: 18px; justify-content: center; flex-wrap: wrap; }
+    .npser-btn {
+      display: inline-block; padding: 18px 42px; font-family: 'Poppins', sans-serif;
+      font-size: 18px; font-weight: 700; border-radius: 12px; text-decoration: none !important;
+      border-bottom: none !important; transition: all 0.3s ease; min-width: 260px;
+      text-align: center; line-height: 1.25; letter-spacing: 0.2px;
+    }
+    .npser-btn-primary {
+      background: linear-gradient(135deg, #FF6B35 0%, #E85A28 100%);
+      color: #ffffff !important; border: none; box-shadow: 0 8px 24px rgba(255,107,53,0.4);
+    }
+    .npser-btn-primary:hover { transform: translateY(-3px); box-shadow: 0 14px 32px rgba(255,107,53,0.55); color: #ffffff !important; }
+    .npser-btn-secondary {
+      background: #ffffff; color: #FF6B35 !important; border: 2px solid #FF6B35;
+      box-shadow: 0 4px 14px rgba(255,107,53,0.15);
+    }
+    .npser-btn-secondary:hover { background: #FF6B35; color: #ffffff !important; transform: translateY(-3px); box-shadow: 0 10px 26px rgba(255,107,53,0.4); }
+
+    .npser-faq-list { display: flex; flex-direction: column; gap: 16px; margin-top: 32px; }
+    .npser-faq-item {
+      background: #ffffff; padding: 28px 30px; border-radius: 14px;
+      border: 1px solid rgba(255,107,53,0.15); border-left: 5px solid #FF6B35;
+      transition: transform 0.3s ease, box-shadow 0.3s ease; box-shadow: 0 3px 14px rgba(0,0,0,0.12);
+    }
+    .npser-faq-item:hover { transform: translateX(6px); box-shadow: 0 12px 30px rgba(0,0,0,0.22); }
+    .npser-faq-item p { font-family: 'Inter', sans-serif; font-size: 16.5px; line-height: 1.8; color: #475569; margin: 0; }
+
+    @media (max-width: 768px) {
+      .npser-section { padding: 60px 20px; }
+      .npser-h2 { font-size: 30px; }
+      .npser-h2-sub { font-size: 22px !important; }
+      .npser-grid { grid-template-columns: 1fr; }
+      .npser-list-check { grid-template-columns: 1fr; }
+      .npser-btn { width: 100%; padding: 15px 20px; font-size: 16px; min-width: 100%; }
+      .npser-faq-h2 { font-size: 18px; }
+      .npser-card-h2 { font-size: 20px; }
+    }
+  </style>
+</head>
+
+<body class="bg-white text-slate-800 antialiased">
+
+<!-- ================= HEADER (From Live Website) ================= -->
+<div class="hidden md:block bg-navy text-slate-200 text-sm">
+  <div class="max-w-7xl mx-auto px-4 flex items-center justify-between py-2">
+    <div class="flex items-center gap-5">
+      <span class="inline-flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-accent animate-pulse"></span> 24/7 Emergency Connection</span>
+      <span class="text-slate-400">|</span>
+      <span class="inline-flex items-center gap-2">
+        <svg class="w-4 h-4 text-teal-400" fill="currentColor" viewBox="0 0 20 20"><path d="M2 4a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V4z"/></svg>
+        Mon–Sat 7am–7pm
+      </span>
+    </div>
+    <div class="flex items-center gap-5">
+      <span class="inline-flex items-center gap-1.5 text-amber-300">★★★★★ <span class="text-slate-300">Trusted Local Service</span></span>
+      <span class="text-slate-400">|</span>
+      <span class="text-slate-300">Licensed &amp; Insured Professionals</span>
+    </div>
+  </div>
+</div>
+
+<header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-slate-100 shadow-sm">
+  <nav class="max-w-7xl mx-auto px-4 flex items-center justify-between h-[68px]">
+    <a href="/" class="flex items-center gap-2.5 shrink-0">
+      <span class="grid place-items-center w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-teal text-white">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3c3.5 4.2 6 7.2 6 10.2A6 6 0 016 13.2C6 10.2 8.5 7.2 12 3z"/></svg>
+      </span>
+      <span class="leading-tight">
+        <span class="block font-display font-extrabold text-navy text-base sm:text-lg">Pipe Repair</span>
+        <span class="block text-[11px] tracking-wide text-slate-500 -mt-0.5">Huntington Beach, CA</span>
+      </span>
+    </a>
+    <ul class="hidden lg:flex items-center gap-1 text-[15px] font-medium text-slate-700">
+      <li><a class="px-3 py-2 rounded-lg hover:text-primary hover:bg-slate-50" href="#hero">Home</a></li>
+      <li class="relative group">
+        <a class='px-3 py-2 rounded-lg hover:text-primary hover:bg-slate-50 inline-flex items-center gap-1' href='/services'>
+          Services
+          <svg class="w-4 h-4 opacity-60" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" d="M6 9l6 6 6-6"/>
+          </svg>
+        </a>
+        <div class="absolute left-0 top-full pt-2 w-72 hidden group-hover:block z-50">
+          <div class="bg-white rounded-xl shadow-xl ring-1 ring-slate-100 p-2">
+            <a href="https://waterheaterrepairhuntingtonbeachca.com/tankless-water-heater-installation-huntington-beach-ca" class="block px-3 py-2 rounded-lg hover:bg-slate-50 text-sm text-slate-700 hover:text-primary">Tankless Water Heater Installation</a>
+            <a href="https://waterheaterrepairhuntingtonbeachca.com/water-heater-maintenance-huntington-beach-ca" class="block px-3 py-2 rounded-lg hover:bg-slate-50 text-sm text-slate-700 hover:text-primary">Water Heater Maintenance</a>
+            <a href="https://waterheaterrepairhuntingtonbeachca.com/water-heater-installation-huntington-beach-ca" class="block px-3 py-2 rounded-lg hover:bg-slate-50 text-sm text-slate-700 hover:text-primary">Water Heater Installation</a>
+            <a href="https://waterheaterrepairhuntingtonbeachca.com/water-heater-replacement-huntington-beach-ca" class="block px-3 py-2 rounded-lg hover:bg-slate-50 text-sm text-slate-700 hover:text-primary">Water Heater Replacement</a>
+            <a href="https://waterheaterrepairhuntingtonbeachca.com/tankless-water-heater-repair-huntington-beach-ca" class="block px-3 py-2 rounded-lg hover:bg-slate-50 text-sm text-slate-700 hover:text-primary">Tankless Water Heater Repair</a>
+            <a href="https://waterheaterrepairhuntingtonbeachca.com/" class="block px-3 py-2 rounded-lg hover:bg-slate-50 text-sm font-semibold text-primary">All Services →</a>
+          </div>
+        </div>
+      </li>
+      <li><a class="px-3 py-2 rounded-lg hover:text-primary hover:bg-slate-50" href="#process">Process</a></li>
+      <li><a class="px-3 py-2 rounded-lg hover:text-primary hover:bg-slate-50" href="#cost">Cost</a></li>
+    </ul>
+    <div class="flex items-center gap-2">
+      <a href="tel:+17144395780" class="hidden sm:inline-flex items-center gap-2 rounded-xl bg-accent hover:bg-accent-dark text-white font-semibold px-4 py-2.5 shadow-sm">
+        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M2 4a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V4z"/></svg>
+        (714) 439-5780
+      </a>
+      <button data-nav-toggle aria-expanded="false" aria-label="Open menu" class="lg:hidden grid place-items-center w-11 h-11 rounded-xl ring-1 ring-slate-200 text-navy">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </nav>
+  <div data-mobile-nav class="hidden lg:hidden border-t border-slate-100 bg-white">
+    <div class="px-4 py-3 space-y-1">
+      <a class="block px-3 py-2.5 rounded-lg hover:bg-slate-50 font-medium" href="#hero">Home</a>
+      <a class="block px-3 py-2.5 rounded-lg hover:bg-slate-50 font-medium" href="#services">Services</a>
+      <a class="block px-3 py-2.5 rounded-lg hover:bg-slate-50 font-medium" href="#process">Process</a>
+      <a class="block px-3 py-2.5 rounded-lg hover:bg-slate-50 font-medium" href="#cost">Cost</a>
+      <a href="tel:+17144395780" class="mt-2 flex items-center justify-center gap-2 rounded-xl bg-accent text-white font-semibold px-4 py-3">Call (714) 439-5780</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============ HERO SECTION ============ -->
+<div class="hp-hero" style="position: relative; width: 100%; min-height: 600px; display: flex; align-items: center; overflow: hidden; padding: 80px 30px; background: #1A2B4A;">
+  <div class="hp-hero-bg" style="position: absolute; inset: 0; background-image: url('https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=1920&q=80'); background-size: cover; background-position: center; z-index: 1;"></div>
+  <div class="hp-hero-overlay" style="position: absolute; inset: 0; background: linear-gradient(90deg, rgba(10, 20, 40, 0.92) 0%, rgba(15, 30, 56, 0.85) 45%, rgba(15, 30, 56, 0.55) 75%, rgba(15, 30, 56, 0.35) 100%); z-index: 2;"></div>
+
+  <div class="hp-hero-wrap" style="position: relative; z-index: 3; max-width: 1180px; width: 100%; margin: 0 auto; text-align: left; color: #ffffff;">
+    <div class="hp-ratings" style="display: flex; align-items: center; gap: 16px; margin-bottom: 32px; flex-wrap: wrap;">
+      <div class="hp-rating" style="display: inline-flex; align-items: center; gap: 10px; background: rgba(255,255,255,0.10); border: 1px solid rgba(255,255,255,0.18); padding: 8px 16px; border-radius: 30px; backdrop-filter: blur(10px);">
+        <span class="hp-rating-icon" style="display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; background: #ffffff; border-radius: 50%;">
+          <svg viewBox="0 0 48 48" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path fill="#FFC107" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"/><path fill="#FF3D00" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"/><path fill="#4CAF50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"/><path fill="#1976D2" d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"/></svg>
+        </span>
+        <div class="hp-rating-body" style="display: flex; flex-direction: column; line-height: 1.15;">
+          <div class="hp-rating-stars" style="font-size: 13px; color: #FFC107;">★★★★★</div>
+          <div class="hp-rating-score" style="font-size: 11.5px; color: #ffffff; font-weight: 600; margin-top: 3px;"><strong>4.9</strong> RATING</div>
+        </div>
+      </div>
+      <div class="hp-rating" style="display: inline-flex; align-items: center; gap: 10px; background: rgba(255,255,255,0.10); border: 1px solid rgba(255,255,255,0.18); padding: 8px 16px; border-radius: 30px; backdrop-filter: blur(10px);">
+        <span class="hp-rating-icon" style="display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; background: #ffffff; border-radius: 50%;">
+          <svg viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="12" fill="#1877F2"/><path fill="#FFFFFF" d="M16.671,9.998h-3.212V7.999c0-0.885,0.572-1.09,0.975-1.09h2.198V3.979l-3.028-0.011c-3.362,0-4.125,2.516-4.125,4.127v1.904H7.328v3.04h2.151v8.953h3.979v-8.953h2.917L16.671,9.998z"/></svg>
+        </span>
+        <div class="hp-rating-body" style="display: flex; flex-direction: column; line-height: 1.15;">
+          <div class="hp-rating-stars" style="font-size: 13px; color: #FFC107;">★★★★★</div>
+          <div class="hp-rating-score" style="font-size: 11.5px; color: #ffffff; font-weight: 600; margin-top: 3px;"><strong>4.9</strong> RATING</div>
+        </div>
+      </div>
+    </div>
+
+    <h1 style="font-family: 'Poppins', sans-serif; font-size: 3.5rem; font-weight: 800; line-height: 1.1; margin-bottom: 20px; color: #fff;">Pipe Repair in<br><span style="color: #FF6B35;">Huntington Beach, CA</span></h1>
+    
+    <p class="hp-desc" style="font-family: 'Inter', sans-serif; font-size: 18px; line-height: 1.75; color: #e2e8f0; margin: 0 0 28px 0; max-width: 680px;">
+      A leaking, cracked, or ruptured plumbing pipe can damage your property, disrupt your water supply, and create problems inside your home or business. Whether you have a damp area beneath a sink, low water pressure, or moisture appearing on walls and floors, identifying the source of the problem is an important first step. <strong>Pipe repair in Huntington Beach, CA</strong> can help determine whether a localized repair is appropriate or a larger section of pipe needs replacement.
+    </p>
+
+    <div class="hp-features" style="display: flex; align-items: center; gap: 36px; margin-bottom: 34px; flex-wrap: wrap;">
+      <div class="hp-feature" style="display: inline-flex; align-items: center; gap: 10px; color: #ffffff;">
+        <span class="hp-feature-icon" style="display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; background: rgba(255,107,53,0.18); border: 1.5px solid rgba(255,107,53,0.55); border-radius: 50%;">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15.5 14"/></svg>
+        </span>
+        <span class="hp-feature-text" style="font-family: 'Poppins', sans-serif; font-size: 14px; font-weight: 700; letter-spacing: 1.3px; text-transform: uppercase;">SAME DAY SERVICE</span>
+      </div>
+      <div class="hp-feature" style="display: inline-flex; align-items: center; gap: 10px; color: #ffffff;">
+        <span class="hp-feature-icon" style="display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; background: rgba(255,107,53,0.18); border: 1.5px solid rgba(255,107,53,0.55); border-radius: 50%;">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+        </span>
+        <span class="hp-feature-text" style="font-family: 'Poppins', sans-serif; font-size: 14px; font-weight: 700; letter-spacing: 1.3px; text-transform: uppercase;">LICENSED &amp; INSURED</span>
+      </div>
+      <div class="hp-feature" style="display: inline-flex; align-items: center; gap: 10px; color: #ffffff;">
+        <span class="hp-feature-icon" style="display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; background: rgba(255,107,53,0.18); border: 1.5px solid rgba(255,107,53,0.55); border-radius: 50%;">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+        </span>
+        <span class="hp-feature-text" style="font-family: 'Poppins', sans-serif; font-size: 14px; font-weight: 700; letter-spacing: 1.3px; text-transform: uppercase;">NO MESS LEFT BEHIND</span>
+      </div>
+    </div>
+
+    <div class="hp-action-row" style="display: flex; align-items: center; gap: 22px; flex-wrap: wrap;">
+      <a href="tel:+17144395780" class="hp-call-btn" style="display: inline-flex; align-items: center; gap: 12px; padding: 20px 36px; font-family: 'Poppins', sans-serif; font-size: 17px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; border-radius: 50px; background: linear-gradient(135deg, #FF6B35 0%, #E85A28 100%); color: #ffffff !important; text-decoration: none !important; border: none; box-shadow: 0 10px 30px rgba(255,107,53,0.5); transition: all 0.3s ease;">
+        <span class="hp-call-icon"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+        <span class="hp-call-text">CALL (714) 439-5780</span>
+        <span class="hp-call-arrow">→</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ============ TRUST BAR ============ -->
+<section class="npser-section" style="background: #ffffff; padding: 0; border-bottom: 1px solid #e6ecf3;">
+  <div style="max-width: 1240px; margin: 0 auto; display: grid; grid-template-columns: repeat(4, 1fr);">
+    <div style="padding: 34px 18px; text-align: center; border-right: 1px solid #e6ecf3;">
+      <div style="font-size: 26px; margin-bottom: 10px;">⚡</div>
+      <div style="font-family: 'Poppins', sans-serif; font-size: 28px; font-weight: 700; color: #1A2B4A;">Fast</div>
+      <div style="font-size: 15px; color: #64748b; font-weight: 500;">Call Connection</div>
+    </div>
+    <div style="padding: 34px 18px; text-align: center; border-right: 1px solid #e6ecf3;">
+      <div style="font-size: 26px; margin-bottom: 10px;">🤝</div>
+      <div style="font-family: 'Poppins', sans-serif; font-size: 28px; font-weight: 700; color: #1A2B4A;">Friendly</div>
+      <div style="font-size: 15px; color: #64748b; font-weight: 500;">Customer Support</div>
+    </div>
+    <div style="padding: 34px 18px; text-align: center; border-right: 1px solid #e6ecf3;">
+      <div style="font-size: 26px; margin-bottom: 10px;">📍</div>
+      <div style="font-family: 'Poppins', sans-serif; font-size: 28px; font-weight: 700; color: #1A2B4A;">Local</div>
+      <div style="font-size: 15px; color: #64748b; font-weight: 500;">Serving Huntington Beach, CA</div>
+    </div>
+    <div style="padding: 34px 18px; text-align: center;">
+      <div style="font-size: 26px; margin-bottom: 10px;">✨</div>
+      <div style="font-family: 'Poppins', sans-serif; font-size: 28px; font-weight: 700; color: #1A2B4A;">Simple</div>
+      <div style="font-size: 15px; color: #64748b; font-weight: 500;">Process</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SIGNS ============ -->
+<section class="npser-section" style="background: #F8F9FA;">
+  <div class="npser-wrap">
+    <h2 class="npser-h2 npser-h2-dark">Signs You May Need Pipe Repair in Huntington Beach, CA</h2>
+    <p class="npser-p">Some plumbing leaks are easy to see, while others remain hidden behind walls, beneath floors, or underground. Identifying warning signs early can help reduce water damage and unnecessary repair work.</p>
+    
+    <h3 class="npser-h2-sub">Visible Pipe Leaks</h3>
+    <p class="npser-p">Dripping pipes, damp cabinets, wet flooring, and moisture marks on ceilings or walls may indicate a plumbing leak. You might also notice peeling paint, bubbling drywall, or dampness around exposed pipework.</p>
+    <p class="npser-p">Water can travel along framing and other surfaces before appearing somewhere else, so the visible damp spot may not be directly below the leak.</p>
+    <p class="npser-p">If water is actively leaking, move belongings away from the affected area and shut off the relevant water supply if it is safe to do so. A plumbing professional can assess whether the cause is a loose connection, damaged fitting, or cracked pipe. For homeowners looking for <strong>leaky pipe repair in Huntington Beach</strong>, identifying the actual leak source is essential before choosing a repair method.</p>
+
+    <h3 class="npser-h2-sub">Low Water Pressure</h3>
+    <p class="npser-p">A sudden drop in water pressure may result from a leaking pipe, a blockage, a faulty valve, or another plumbing issue. If several taps or fixtures are affected, the problem may involve a shared water supply.</p>
+    <p class="npser-p">Listen for unusual sounds in the plumbing and, where appropriate, check whether your water meter continues moving when known water-using fixtures are turned off. This may help identify a potential leak, although some properties have equipment or systems that make this check less straightforward.</p>
+    <p class="npser-p">Low pressure does not automatically mean a pipe has broken. A professional can investigate whether the cause is pipe damage, a faulty valve, a fitting, or the water supply itself.</p>
+
+    <h3 class="npser-h2-sub">Hidden Pipe Leaks</h3>
+    <p class="npser-p">Musty odors, repeated damp patches, swollen flooring, and unexpectedly high water usage may indicate a hidden plumbing leak. If a pipe is leaking inside a wall or beneath the floor, the damage may not become obvious until moisture begins affecting surrounding materials.</p>
+    <p class="npser-p">Avoid opening walls or flooring without first investigating the likely location of the leak. Appropriate inspection and leak detection methods can help narrow down the problem and reduce unnecessary damage.</p>
+  </div>
+</section>
+
+<!-- ============ CAUSES ============ -->
+<section class="npser-section" style="background: #ffffff;">
+  <div class="npser-wrap">
+    <h2 class="npser-h2 npser-h2-dark">Common Causes of Plumbing Pipe Damage</h2>
+    <p class="npser-p">Understanding why a pipe has failed helps determine whether a localized repair is likely to solve the problem or whether more extensive plumbing work may be necessary.</p>
+    
+    <h3 class="npser-h2-sub">Corrosion, Aging Pipes, and Worn Joints</h3>
+    <p class="npser-p">Pipes and fittings can deteriorate over time. Depending on the material and water conditions, corrosion, mineral buildup, weak joints, and general wear can lead to leaks or blockages.</p>
+    <p class="npser-p">Older plumbing systems may contain several deteriorated sections. A localized repair may be suitable if the damage is limited, while extensive deterioration may make replacement more practical.</p>
+    <p class="npser-p">Leaks near joints can result from worn fittings, damaged seals, or movement in the pipe. The surrounding connections should be checked to determine whether the problem is isolated or part of a wider issue.</p>
+
+    <h3 class="npser-h2-sub">High Water Pressure</h3>
+    <p class="npser-p">Excessive water pressure can place additional strain on pipes, valves, fittings, and joints. A weakened pipe or fitting may eventually fail under that pressure.</p>
+    <p class="npser-p">If leaks keep appearing in different areas, ask whether the water pressure should be checked. Repairing an individual leak without addressing excessive pressure may leave other parts of the plumbing system vulnerable.</p>
+
+    <h3 class="npser-h2-sub">Blockages, Accidental Damage, and Poor Installation</h3>
+    <p class="npser-p">Grease, hair, debris, and unsuitable materials can contribute to drain blockages. Recurring blockages may also indicate damaged, misaligned, or deteriorated drain pipes.</p>
+    <p class="npser-p">Water supply pipes can be damaged during renovations, through accidental impacts, because of joint movement, or due to incorrect installation. A professional inspection can help identify the affected section and determine what repair is needed.</p>
+  </div>
+</section>
+
+<!-- ============ TYPES OF PIPE REPAIR ============ -->
+<section class="npser-section" style="background: #F8F9FA;">
+  <div class="npser-wrap">
+    <h2 class="npser-h2 npser-h2-dark">Types of Pipe Repair Services</h2>
+    <p class="npser-p">Different plumbing systems require different repair methods. The first step is to determine whether the problem involves a water supply pipe, drain pipe, sewer pipe, or concealed plumbing.</p>
+    
+    <h3 class="npser-h2-sub">Water Supply Pipe Repairs</h3>
+    <p class="npser-p">Water supply pipes carry water to taps, toilets, showers, water heaters, and other fixtures. Leaks may occur in exposed pipes, joints, shutoff valves, or concealed sections.</p>
+    <p class="npser-p">Depending on the damage, a professional may repair or replace a fitting or remove a short section of pipe and install compatible replacement materials. The replacement components should be appropriate for the existing plumbing system.</p>
+    <p class="npser-p">After the repair, the affected section should be checked for leaks and correct operation before it is concealed behind a wall or other surface.</p>
+
+    <h3 class="npser-h2-sub">Drain and Sewer Pipe Repairs</h3>
+    <p class="npser-p">Drain and sewer pipes remove wastewater from your property. Cracks, leaking joints, corrosion, misalignment, and recurring blockages can prevent them from working properly.</p>
+    <p class="npser-p">Clearing a blockage may restore flow, but it will not repair a cracked pipe or failed joint. When the affected pipe is hidden or underground, suitable inspection methods can help locate the problem.</p>
+    <p class="npser-p">If you suspect damage to an underground wastewater pipe, <strong>sewer pipe repair in Huntington Beach</strong> may be needed. The appropriate solution depends on the pipe's condition, accessibility, and extent of damage. A professional inspection can help establish whether a localized repair, pipe replacement, or another suitable method is required.</p>
+
+    <h3 class="npser-h2-sub">Burst Pipe Repair in Huntington Beach</h3>
+    <p class="npser-p">A burst pipe can release water rapidly and damage flooring, walls, ceilings, stored belongings, and nearby electrical equipment. Prompt action can help limit the spread of water and reduce further damage.</p>
+    <p class="npser-p">For <strong>burst pipe repair in Huntington Beach</strong>, the immediate priority is to stop the water flow safely and identify the failed section. Once the leak is controlled, the damaged pipe can be assessed.</p>
+    <p class="npser-p">If the failure is isolated, a localized repair or short section replacement may be sufficient. If nearby sections show similar deterioration, further inspection may be recommended.</p>
+    <p class="npser-p">If you need <strong>Huntington Beach burst pipe repair</strong>, explain where the water is appearing, whether the leak is active, and whether you have been able to shut off the supply. This information can help the plumbing professional understand the urgency of the situation.</p>
+
+    <h3 class="npser-h2-sub">Slab Leak and Hidden Pipe Repairs</h3>
+    <p class="npser-p">A slab leak occurs when a plumbing pipe beneath or within a concrete foundation develops a leak. Possible signs include unexplained dampness, warm flooring in some hot-water leak situations, changes in water usage, and recurring water damage.</p>
+    <p class="npser-p">These symptoms can have other causes, so they should not be treated as proof of a slab leak. Appropriate leak detection methods can help locate the problem and determine whether the pipe should be accessed directly, rerouted, or repaired using another suitable method.</p>
+    <p class="npser-p">The recommended approach depends on the pipe's location, accessibility, material, and condition.</p>
+  </div>
+</section>
+
+<!-- ============ REPAIR VS REPLACE ============ -->
+<section class="npser-section" style="background: #ffffff;">
+  <div class="npser-wrap">
+    <h2 class="npser-h2 npser-h2-dark">Pipe Repair or Replacement: Which Is Better?</h2>
+    <p class="npser-p">Replacing an entire pipe is not always necessary when only one section has failed. If the damage is limited and the surrounding pipe remains in good condition, a localized repair may be appropriate.</p>
+    <p class="npser-p"><strong>Depending on the plumbing system and the problem, a professional may recommend:</strong></p>
+    <ul class="npser-list-check" style="grid-template-columns: 1fr; gap: 12px; margin-bottom: 20px;">
+        <li><strong>Fitting or joint repair:</strong> Addressing a leaking connection when the fitting can be repaired or replaced appropriately.</li>
+        <li><strong>Localized pipe replacement:</strong> Removing the damaged section and installing suitable replacement pipe and fittings.</li>
+        <li><strong>Accessing concealed pipes:</strong> Opening an appropriate section of wall, ceiling, floor, or another surface to reach the damaged pipe.</li>
+        <li><strong>Pipe rerouting:</strong> Bypassing a damaged or inaccessible section when the layout and conditions make this suitable.</li>
+        <li><strong>More extensive replacement:</strong> Replacing a larger section when deterioration or repeated failures make a localized repair less practical.</li>
+    </ul>
+    <p class="npser-p">The recommendation should account for pipe type, size, location, pressure requirements, accessibility, and applicable plumbing requirements.</p>
+    <p class="npser-p">Ask why the proposed option is appropriate and whether nearby sections have been checked. Understanding the condition of the surrounding pipe can help you evaluate whether further repairs may be needed.</p>
+  </div>
+</section>
+
+<!-- ============ PROCESS ============ -->
+<section id="process" class="npser-section" style="background: #F8F9FA;">
+  <div class="npser-wrap">
+    <h2 class="npser-h2 npser-h2-dark">What to Expect From a Professional Pipe Repair</h2>
+    <p class="npser-p">Every job is different, but the process generally includes the following steps.</p>
+    <div style="display: flex; flex-direction: column; gap: 16px; margin-top: 24px;">
+        <div style="background: #fff; padding: 20px; border-radius: 12px; border-left: 4px solid #FF6B35; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+            <strong style="color: #1A2B4A; font-size: 18px;">1. Discuss the problem.</strong>
+            <p class="npser-p" style="margin: 8px 0 0 0;">Explain where you see water, when the issue began, whether it keeps returning, and which fixtures are affected.</p>
+        </div>
+        <div style="background: #fff; padding: 20px; border-radius: 12px; border-left: 4px solid #FF6B35; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+            <strong style="color: #1A2B4A; font-size: 18px;">2. Inspect the plumbing.</strong>
+            <p class="npser-p" style="margin: 8px 0 0 0;">Accessible pipes, joints, valves, and surrounding surfaces are examined for possible causes.</p>
+        </div>
+        <div style="background: #fff; padding: 20px; border-radius: 12px; border-left: 4px solid #FF6B35; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+            <strong style="color: #1A2B4A; font-size: 18px;">3. Investigate hidden damage.</strong>
+            <p class="npser-p" style="margin: 8px 0 0 0;">Suitable leak detection or inspection methods may be used if the pipe is concealed.</p>
+        </div>
+        <div style="background: #fff; padding: 20px; border-radius: 12px; border-left: 4px solid #FF6B35; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+            <strong style="color: #1A2B4A; font-size: 18px;">4. Explain the repair options.</strong>
+            <p class="npser-p" style="margin: 8px 0 0 0;">The professional identifies the affected section, recommended repair, access requirements, and any limitations.</p>
+        </div>
+        <div style="background: #fff; padding: 20px; border-radius: 12px; border-left: 4px solid #FF6B35; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+            <strong style="color: #1A2B4A; font-size: 18px;">5. Complete the agreed work.</strong>
+            <p class="npser-p" style="margin: 8px 0 0 0;">The damaged component is repaired or replaced using suitable materials and fittings.</p>
+        </div>
+        <div style="background: #fff; padding: 20px; border-radius: 12px; border-left: 4px solid #FF6B35; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+            <strong style="color: #1A2B4A; font-size: 18px;">6. Test the repair.</strong>
+            <p class="npser-p" style="margin: 8px 0 0 0;">Appropriate checks are completed to confirm correct operation and look for visible leaks.</p>
+        </div>
+    </div>
+    <p class="npser-p" style="margin-top: 24px;">Request a written quotation explaining the repair, materials, access or demolition requirements, and any restoration costs. If a wall, floor, or ceiling must be opened, confirm whether sealing, painting, tiling, and other finishing work are included.</p>
+  </div>
+</section>
+
+<!-- ============ EMERGENCY ============ -->
+<section class="npser-section" style="background: linear-gradient(135deg, #1A2B4A 0%, #2d4a7c 100%);">
+  <div class="npser-wrap">
+    <h2 class="npser-h2 npser-h2-orange">Emergency Pipe Repair in Huntington Beach, CA</h2>
+    <p class="npser-p npser-p-light">A sudden pipe failure may require urgent attention, especially when water is spreading through a building or reaching electrical equipment.</p>
+    <p class="npser-p npser-p-light"><strong>If a pipe is leaking heavily:</strong></p>
+    <ul class="npser-list-check" style="grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 20px;">
+        <li>Turn off the affected water supply or main supply if you can do so safely.</li>
+        <li>Keep people away from standing water near electrical outlets, wiring, and appliances.</li>
+        <li>Move belongings away from the affected area if it is safe.</li>
+        <li>Do not enter a flooded area where electrical hazards may be present.</li>
+        <li>Contact a suitable plumbing professional to assess the problem.</li>
+    </ul>
+    <p class="npser-p npser-p-light">Do not handle damaged electrical equipment or enter an unsafe flooded area. If there is an immediate electrical or structural hazard, keep away and contact the appropriate emergency service.</p>
+    <p class="npser-p npser-p-light">If you search for an <strong>emergency plumber near me</strong>, confirm that the provider handles burst pipes and can respond to your location. Searches such as <strong>24 7 plumber near me</strong>, <strong>24 hour plumber near me</strong>, and <strong>24 hr plumber near me</strong> may help you find providers advertising extended availability, but you should confirm actual attendance times directly.</p>
+    <p class="npser-p npser-p-light">If you need <strong>same day plumber near me</strong> services, ask whether an assessment or repair can be arranged that day. Not all plumbing companies offer immediate attendance or around-the-clock response.</p>
+  </div>
+</section>
+
+<!-- ============ COST ============ -->
+<section id="cost" class="npser-section" style="background: #ffffff;">
+  <div class="npser-wrap">
+    <h2 class="npser-h2 npser-h2-dark">Pipe Repair Cost in Huntington Beach, CA</h2>
+    <p class="npser-p">The cost of pipe repair in Huntington Beach depends on the type of pipe, location of the damage, accessibility, and amount of work required.</p>
+    <p class="npser-p"><strong>Common cost factors include:</strong></p>
+    <ul class="npser-list-check" style="grid-template-columns: 1fr 2fr; gap: 12px; margin-bottom: 20px;">
+        <li><strong>Pipe type and size:</strong> Different materials, diameters, and fittings have different requirements.</li>
+        <li><strong>Leak location:</strong> Exposed pipes are generally easier to access than pipes behind walls, beneath floors, or inside concrete.</li>
+        <li><strong>Severity of damage:</strong> A small isolated leak may require less work than a severely damaged section.</li>
+        <li><strong>Hidden leak detection:</strong> Additional inspection may be needed to locate concealed damage.</li>
+        <li><strong>Access and restoration:</strong> Opening walls, lifting flooring, excavating, and restoring finished surfaces can affect the total cost.</li>
+        <li><strong>Damaged valves and fittings:</strong> Additional components may need repair or replacement.</li>
+    </ul>
+    <p class="npser-p">Ask for a breakdown of the quotation and confirm what is included. If multiple repair methods are technically suitable, compare their materials, labor, expected disruption, and limitations.</p>
+  </div>
+</section>
+
+<!-- ============ PREVENTION ============ -->
+<section class="npser-section" style="background: #F8F9FA;">
+  <div class="npser-wrap">
+    <h2 class="npser-h2 npser-h2-dark">How to Help Prevent Future Pipe Problems</h2>
+    <p class="npser-p">Although not every pipe failure can be prevented, regular checks and appropriate plumbing maintenance can help identify developing problems.</p>
+    <ul class="npser-list-check" style="grid-template-columns: 1fr; gap: 12px; margin-bottom: 20px;">
+        <li>Inspect accessible pipes and joints for moisture, corrosion, and other visible damage.</li>
+        <li>Investigate repeated leaks instead of repeatedly tightening fittings without identifying the cause.</li>
+        <li>Avoid putting grease, wipes, and unsuitable materials into drains.</li>
+        <li>Investigate unusual water pressure and recurring changes in water usage.</li>
+        <li>Use appropriately qualified professionals for plumbing alterations.</li>
+        <li>Arrange an assessment for unexplained dampness, musty odors, or recurring moisture marks.</li>
+        <li>If your property has older plumbing or a history of repeated leaks, ask whether a wider assessment is appropriate.</li>
+    </ul>
+    <p class="npser-p">The condition of surrounding pipes matters when deciding whether another localized repair is likely to be reliable.</p>
+  </div>
+</section>
+
+<!-- ============ RESIDENTIAL & COMMERCIAL ============ -->
+<section class="npser-section" style="background: #ffffff;">
+  <div class="npser-wrap">
+    <h2 class="npser-h2 npser-h2-dark">Residential and Commercial Pipe Repairs</h2>
+    <p class="npser-p">Residential pipe repairs may involve water supply lines, drain pipes, fixture connections, and concealed plumbing in kitchens, bathrooms, laundry rooms, and utility areas. The goal is to identify the cause, limit further damage, and restore the plumbing system appropriately.</p>
+    <p class="npser-p">A <strong>residential plumber</strong> may be suitable for many household pipe repairs, depending on the nature of the problem and the professional's capabilities.</p>
+    <p class="npser-p">Commercial pipe repairs can involve more complex plumbing systems, greater water demand, multiple fixtures, and coordination with building operations. Offices, retail properties, and other commercial buildings may have specific access, scheduling, permit, and essential-service requirements.</p>
+    <p class="npser-p">If you are searching for a <strong>commercial plumber near me</strong>, confirm that the provider can work on your type of building and handle the particular pipe problem. Ask whether repairs will disrupt water service and how long the affected area may be out of use.</p>
+    <p class="npser-p">For general <strong>plumber services near me</strong>, check that the company performs the specific repair you need rather than assuming every provider handles burst pipes, concealed leaks, and sewer lines.</p>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="npser-section" style="background: linear-gradient(135deg, #1A2B4A 0%, #243B5E 100%);">
+  <div class="npser-wrap">
+    <h2 class="npser-h2 npser-h2-orange" style="text-align:center;">Frequently Asked Questions</h2>
+    <div class="npser-faq-list">
+      <div class="npser-faq-item">
+        <h2 class="npser-faq-h2">How Can I Tell if a Pipe Is Leaking Behind a Wall?</h2>
+        <p>Possible signs include damp patches, peeling paint, musty odors, unexpected water usage, and recurring damage. These symptoms can have other causes, so appropriate inspection or leak detection is needed to identify the source.</p>
+      </div>
+      <div class="npser-faq-item">
+        <h2 class="npser-faq-h2">Can a Leaking Pipe Be Repaired?</h2>
+        <p>Yes, if the damage is limited and the surrounding pipe remains in suitable condition. If the pipe has extensive deterioration or repeated failures, replacing a larger section may be more appropriate.</p>
+      </div>
+      <div class="npser-faq-item">
+        <h2 class="npser-faq-h2">What Should I Do if a Pipe Bursts?</h2>
+        <p>If it is safe, shut off the water supply, keep people away from electrical hazards, and move belongings away from the affected area. Do not enter unsafe flooded areas. Contact a plumbing professional, and contact the appropriate emergency service if there is an immediate electrical or structural danger.</p>
+      </div>
+      <div class="npser-faq-item">
+        <h2 class="npser-faq-h2">How Much Does Pipe Repair Cost in Huntington Beach, CA?</h2>
+        <p>The cost depends on the pipe material, severity of damage, accessibility, inspection requirements, and restoration work. A more reliable estimate can usually be provided after the affected area has been assessed.</p>
+      </div>
+      <div class="npser-faq-item">
+        <h2 class="npser-faq-h2">Can Low Water Pressure Mean I Have a Damaged Pipe?</h2>
+        <p>It can, but low pressure may also result from a faulty valve, blocked pipe, malfunctioning fixture, or water supply issue. Identifying the cause before recommending a repair helps avoid unnecessary work.</p>
+      </div>
+      <div class="npser-faq-item">
+        <h2 class="npser-faq-h2">Are Pipe Repairs Different From Drain Clearing?</h2>
+        <p>Yes. Drain clearing addresses a blockage, while pipe repair addresses physical damage such as cracks, leaking joints, or ruptures. Some problems involve both, so the cause should be identified before choosing a solution.</p>
+      </div>
+      <div class="npser-faq-item">
+        <h2 class="npser-faq-h2">How Long Do Plumbing Pipe Repairs Take?</h2>
+        <p>An accessible pipe repair may be relatively quick. Hidden leaks, slab leaks, excavation, and restoration can take longer. The timeframe depends on the findings, access requirements, materials, and scope of work.</p>
+      </div>
+      <div class="npser-faq-item">
+        <h2 class="npser-faq-h2">Should I Repair or Replace Old Plumbing Pipes?</h2>
+        <p>The decision depends on the pipe material, overall condition, frequency of failures, and extent of corrosion or damage. If several sections are deteriorating or leaks keep recurring, ask whether a broader replacement plan would be more practical.</p>
+      </div>
+      <div class="npser-faq-item">
+        <h2 class="npser-faq-h2">What Is the Difference Between Pipe Repair and Pipe Break Repair in Huntington?</h2>
+        <p>The phrases <strong>Huntington pipe break repair</strong> and <strong>Huntington CA pipe break repair</strong> may be used to search for help with damaged or broken pipes, but the location should be clarified when contacting a provider. If your property is in Huntington Beach, California, confirm that the company serves that specific area.</p>
+      </div>
+      <div class="npser-faq-item">
+        <h2 class="npser-faq-h2">Do You Offer Sewer Pipe Repair in Huntington Beach?</h2>
+        <p>The appropriate solution for a damaged sewer pipe depends on its condition, location, and accessibility. If you suspect an underground sewer leak, recurring backups, or a cracked wastewater pipe, ask a suitable professional about inspection and repair options.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<section class="npser-section" style="background: linear-gradient(135deg, #0F1E38 0%, #1A2B4A 100%);">
+  <div class="npser-wrap">
+    <h2 class="npser-h2 npser-h2-orange" style="text-align:center;">Get Help With Pipe Repair in Huntington Beach, CA</h2>
+    <p class="npser-p npser-p-light" style="text-align:center; max-width: 800px; margin: 0 auto 20px auto;">Leaking, cracked, and burst pipes should be assessed to identify the cause and determine which repair is appropriate for your plumbing system. Whether you need a localized fix, concealed leak investigation, or a larger section replacement, a clear diagnosis can help you understand the work involved.</p>
+    <p class="npser-p npser-p-light" style="text-align:center; max-width: 800px; margin: 0 auto 20px auto;">If you need <strong>pipe repair Huntington Beach CA</strong>, contact a suitable plumbing professional and explain the symptoms, the suspected pipe location, and whether water is actively leaking. For urgent problems, clearly state if the pipe has burst and whether you have been able to shut off the water supply.</p>
+    <p class="npser-p npser-p-light" style="text-align:center; max-width: 800px; margin: 0 auto 20px auto;">If you are looking for <strong>Huntington CA pipe break repair</strong>, <strong>Huntington pipe break repair</strong>, <strong>burst pipe repair Huntington Beach</strong>, or <strong>burst pipe repair in Huntington Beach</strong>, confirm that the provider serves Huntington Beach, California, and can handle your particular problem.</p>
+    <p class="npser-p npser-p-light" style="text-align:center; max-width: 800px; margin: 0 auto 20px auto;">When searching for a <strong>licensed plumber near me</strong>, verify the provider's applicable credentials, service area, and experience with the required repair. If <strong>i need a plumber</strong> is your immediate concern, explain the urgency and ask about availability. A <strong>24/7 plumber</strong> should only be considered available around the clock when the provider confirms that service.</p>
+    <p class="npser-p npser-p-light" style="text-align:center; max-width: 800px; margin: 0 auto 30px auto;">If this website connects visitors with independent service professionals, confirm the provider's identity, service area, availability, and terms before arranging work.</p>
+    
+    <div class="npser-cta-row">
+      <a href="tel:+17144395780" class="npser-btn npser-btn-primary">📞 Call for Pipe Repair</a>
+      <a href="#contact" class="npser-btn npser-btn-secondary">Request a Quote</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER (From Live Website) ================= -->
+<footer class="bg-navy text-slate-300 border-t border-white/10">
+  <div class="max-w-7xl mx-auto px-4 py-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+    <div>
+      <div class="flex items-center gap-2.5">
+        <span class="grid place-items-center w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-teal text-white">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3c3.5 4.2 6 7.2 6 10.2A6 6 0 016 13.2C6 10.2 8.5 7.2 12 3z"/></svg>
+        </span>
+        <span class="font-display font-extrabold text-white text-lg">Pipe Repair Huntington Beach</span>
+      </div>
+      <p class="mt-4 text-sm text-slate-400">Your trusted connection to pipe repair professionals serving Huntington Beach, CA and surrounding areas.</p>
+      <p class="mt-4 text-sm"><span class="text-amber-300">★★★★★</span> Trusted Local Service</p>
+    </div>
+    <div>
+      <h3 class="font-display font-bold text-white text-lg">Services</h3>
+      <ul class="mt-4 space-y-2 text-sm">
+        <li><a class='hover:text-teal-400' href='https://waterheaterrepairhuntingtonbeachca.com/'>Water Heater Repair</a></li>
+        <li><a class='hover:text-teal-400' href='https://waterheaterrepairhuntingtonbeachca.com/water-heater-installation-huntington-beach-ca'>Water Heater Installation</a></li>
+        <li><a class='hover:text-teal-400' href='https://waterheaterrepairhuntingtonbeachca.com/water-heater-replacement-huntington-beach-ca'>Water Heater Replacement</a></li>
+        <li><a class='hover:text-teal-400' href='https://waterheaterrepairhuntingtonbeachca.com/tankless-water-heater-installation-huntington-beach-ca'>Tankless Water Heaters Installation</a></li>
+        <li><a class='hover:text-teal-400' href='https://waterheaterrepairhuntingtonbeachca.com/tankless-water-heater-repair-huntington-beach-ca'>Tankless Water Heaters Repair</a></li>
+        <li><a class='hover:text-teal-400' href='https://waterheaterrepairhuntingtonbeachca.com/water-heater-maintenance-huntington-beach-ca'>Water Heater Maintenance</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="font-display font-bold text-white text-lg">Quick Links</h3>
+      <ul class="mt-4 space-y-2 text-sm">
+        <li><a class="hover:text-teal-400" href="#process">Our Process</a></li>
+        <li><a class="hover:text-teal-400" href="#cost">Pricing & Cost</a></li>
+        <li><a class="hover:text-teal-400" href="#contact">Contact Us</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="font-display font-bold text-white text-lg">Get In Touch</h3>
+      <ul class="mt-4 space-y-3 text-sm">
+        <li class="flex items-start gap-2"><svg class="w-5 h-5 text-teal-400 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M2 4a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V4z"/></svg><a class="hover:text-teal-400 font-semibold text-white" href="tel:+17144395780">(714) 439-5780</a></li>
+        <li class="flex items-start gap-2"><svg class="w-5 h-5 text-teal-400 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/></svg><span>Huntington Beach, CA 92648</span></li>
+        <li class="flex items-start gap-2"><svg class="w-5 h-5 text-teal-400 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" d="M12 6v6l4 2M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg><span>Mon–Sat 7am–7pm · 24/7 Emergency</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 py-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-400">
+      <p>© <span id="year">2026</span> Pipe Repair Huntington Beach. All rights reserved.</p>
+      <nav class="flex items-center gap-4" aria-label="Footer">
+        <a class="hover:text-teal-400" href="#services">Services</a>
+        <a class="hover:text-teal-400" href="#process">Process</a>
+        <a class="hover:text-teal-400" href="#">Disclaimer</a>
+        <a class="hover:text-teal-400" href="tel:+17144395780">Call</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<!-- STICKY MOBILE CALL BAR -->
+<div class="md:hidden fixed bottom-0 inset-x-0 z-40 bg-white border-t border-slate-200 shadow-[0_-6px_20px_-10px_rgba(0,0,0,0.25)]">
+  <div class="grid grid-cols-2 divide-x divide-slate-200">
+    <a href="tel:+17144395780" class="flex items-center justify-center gap-2 py-3.5 font-semibold text-navy">
+      <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20"><path d="M2 4a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V4z"/></svg>
+      Call Now
+    </a>
+    <a href="tel:+17144395780" class="flex items-center justify-center gap-2 py-3.5 font-semibold text-white bg-accent">Free Quote</a>
+  </div>
+</div>
+
+<script>
+  // Mobile nav toggle
+  const navToggle = document.querySelector('[data-nav-toggle]');
+  const mobileNav = document.querySelector('[data-mobile-nav]');
+  if (navToggle && mobileNav) {
+    navToggle.addEventListener('click', function() {
+      mobileNav.classList.toggle('hidden');
+      this.setAttribute('aria-expanded', !mobileNav.classList.contains('hidden'));
+    });
+  }
+  // Auto year
+  const yearEl = document.getElementById('year');
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+  // Smooth scroll
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', function(e) {
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        if (mobileNav && !mobileNav.classList.contains('hidden')) {
+          mobileNav.classList.add('hidden');
+          navToggle.setAttribute('aria-expanded', 'false');
+        }
+      }
+    });
+  });
+
+  // Reveal on scroll
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>
