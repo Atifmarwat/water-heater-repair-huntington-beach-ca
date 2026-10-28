@@ -31,6 +31,7 @@
   </script>
   <style>
     html { scroll-behavior: smooth; }
+    body { overflow-x: hidden; }
     .reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
     .reveal.in { opacity: 1; transform: translateY(0); }
     .eyebrow-line::after {
@@ -152,6 +153,124 @@
       .npser-btn { width: 100%; padding: 15px 20px; font-size: 16px; min-width: 100%; }
       .npser-faq-h2 { font-size: 18px; }
       .npser-card-h2 { font-size: 20px; }
+    }
+
+    /* ============================================
+       MOBILE RESPONSIVE FIXES - HERO SECTION
+       ============================================ */
+    @media (max-width: 768px) {
+      /* Hero Section */
+      .hp-hero {
+        min-height: auto !important;
+        padding: 40px 16px 50px !important;
+      }
+      .hp-hero-wrap h1 {
+        font-size: 2rem !important;
+        line-height: 1.2 !important;
+        margin-bottom: 16px !important;
+      }
+      .hp-hero-wrap p.hp-desc {
+        font-size: 15px !important;
+        line-height: 1.7 !important;
+        margin-bottom: 22px !important;
+        max-width: 100% !important;
+      }
+      .hp-ratings {
+        gap: 8px !important;
+        margin-bottom: 20px !important;
+      }
+      .hp-rating {
+        padding: 6px 12px !important;
+        gap: 6px !important;
+      }
+      .hp-rating-icon {
+        width: 26px !important;
+        height: 26px !important;
+      }
+      .hp-rating-icon svg {
+        width: 16px !important;
+        height: 16px !important;
+      }
+      .hp-rating-stars {
+        font-size: 11px !important;
+      }
+      .hp-rating-score {
+        font-size: 10px !important;
+      }
+      .hp-features {
+        gap: 12px !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        margin-bottom: 22px !important;
+      }
+      .hp-feature-icon {
+        width: 26px !important;
+        height: 26px !important;
+      }
+      .hp-feature-icon svg {
+        width: 14px !important;
+        height: 14px !important;
+      }
+      .hp-feature-text {
+        font-size: 12px !important;
+      }
+      .hp-action-row {
+        width: 100% !important;
+        flex-direction: column !important;
+        align-items: stretch !important;
+      }
+      .hp-call-btn {
+        width: 100% !important;
+        justify-content: center !important;
+        padding: 16px 22px !important;
+        font-size: 14px !important;
+        letter-spacing: 0.5px !important;
+      }
+      .hp-call-text {
+        font-size: 13px !important;
+      }
+      .hp-call-arrow {
+        font-size: 18px !important;
+      }
+
+      /* Trust Bar - Mobile Fixes */
+      .npser-section > div[style*="grid-template-columns: repeat(4"] {
+        grid-template-columns: repeat(2, 1fr) !important;
+      }
+      .npser-section > div[style*="grid-template-columns: repeat(4"] > div {
+        border-right: none !important;
+        border-bottom: 1px solid #e6ecf3 !important;
+        padding: 22px 12px !important;
+      }
+      .npser-section > div[style*="grid-template-columns: repeat(4"] > div:nth-child(odd) {
+        border-right: 1px solid #e6ecf3 !important;
+      }
+    }
+
+    /* Small Mobile (max 400px) */
+    @media (max-width: 400px) {
+      .hp-hero-wrap h1 {
+        font-size: 1.75rem !important;
+      }
+      .hp-desc {
+        font-size: 14px !important;
+      }
+      .hp-call-btn {
+        padding: 14px 18px !important;
+        font-size: 13px !important;
+      }
+      .hp-call-text {
+        font-size: 12px !important;
+      }
+      .npser-h2 {
+        font-size: 23px !important;
+      }
+      .npser-h2-sub {
+        font-size: 18px !important;
+      }
+      .npser-p {
+        font-size: 15px !important;
+      }
     }
   </style>
 </head>
