@@ -75,32 +75,31 @@
       box-shadow: 0 20px 50px rgba(26,43,74,0.15);
       overflow: hidden;
       border: 1px solid #e6ecf3;
-      position: relative;
-      min-height: 650px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
     }
 
     .leadsmart-form-container iframe {
       display: block;
       width: 100%;
+      max-width: 600px;
       border: none;
-      min-height: 650px;
+      min-height: 545px;
     }
-
-    /* Fallback if iframe fails */
-    .form-fallback {
-      display: none;
-      padding: 40px 30px;
-      text-align: center;
-    }
-    .leadsmart-form-container.failed .form-fallback { display: block; }
-    .leadsmart-form-container.failed iframe { display: none; }
 
     @media (max-width: 768px) {
       .npser-h2 { font-size: 30px; }
       .npser-disc-h2 { font-size: 22px; }
       .npser-disc-p { font-size: 14px; }
-      .leadsmart-form-container iframe { min-height: 750px; }
-      .leadsmart-form-container { min-height: 750px; }
+      .leadsmart-form-container {
+        padding: 10px;
+      }
+      .leadsmart-form-container iframe {
+        width: 100%;
+        min-height: 600px;
+      }
     }
   </style>
 </head>
@@ -248,29 +247,15 @@
       <p class="text-slate-500 mt-4 max-w-2xl mx-auto">Fill out the form below and a local plumbing professional will get back to you as soon as possible.</p>
     </div>
 
-    <!-- Leadsmart Form Iframe (HTTPS + Working) -->
-    <div class="leadsmart-form-container" id="leadsmart-container">
+    <!-- Leadsmart Form (funnel=4) -->
+    <div class="leadsmart-form-container">
       <iframe 
-        id="leadsmart-iframe"
-        src="https://leads.leadsmartinc.com/?api_key=eccf565586cda416df8b89f66df641fee9a1bcb8&affiliate_source=asmdszcnbasasw1&funnel=3&category=0&step=1&buttons=btn-success" 
-        width="100%" 
-        height="650" 
+        src="https://leads.leadsmartinc.com/?api_key=eccf565586cda416df8b89f66df641fee9a1bcb8&affiliate_source=asmdszcnbasasw1&funnel=4&category=0&step=1&buttons=btn-success" 
+        width="600" 
+        height="545" 
         frameborder="0"
-        allow="camera; microphone; autoplay; encrypted-media;"
-        referrerpolicy="no-referrer-when-downgrade"
         title="Contact Form - Water Leak Detection Huntington Beach">
       </iframe>
-      
-      <!-- Fallback (if iframe blocked) -->
-      <div class="form-fallback">
-        <div class="text-5xl mb-4">📞</div>
-        <h3 class="font-display font-bold text-2xl text-navy mb-3">Call Us Directly</h3>
-        <p class="text-slate-500 mb-4">Our form is temporarily unavailable. Please call us for immediate assistance.</p>
-        <a href="tel:+17144395780" class="inline-block bg-accent text-white font-bold px-8 py-4 rounded-xl hover:bg-accent-dark transition">
-          📞 Call (714) 439-5780
-        </a>
-        <p class="text-slate-500 text-sm mt-4">Or email: contact@waterheaterrepairhuntingtonbeachca.com</p>
-      </div>
     </div>
 
     <p class="text-center text-xs text-slate-500 mt-6">
@@ -402,7 +387,6 @@
 </div>
 
 <script>
-  // Mobile nav toggle
   const navToggle = document.querySelector('[data-nav-toggle]');
   const mobileNav = document.querySelector('[data-mobile-nav]');
   if (navToggle && mobileNav) {
@@ -411,31 +395,8 @@
       this.setAttribute('aria-expanded', !mobileNav.classList.contains('hidden'));
     });
   }
-  // Auto year
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
-
-  // Leadsmart iframe fallback detection
-  const iframe = document.getElementById('leadsmart-iframe');
-  const container = document.getElementById('leadsmart-container');
-  
-  if (iframe && container) {
-    // Agar 8 seconds ke andar iframe load nahi hua, toh fallback dikhao
-    const loadTimeout = setTimeout(() => {
-      try {
-        // Check if iframe has loaded content
-        if (!iframe.contentWindow || iframe.contentWindow.location.href === 'about:blank') {
-          container.classList.add('failed');
-        }
-      } catch (e) {
-        // Cross-origin error means iframe likely loaded (good sign)
-      }
-    }, 8000);
-
-    iframe.addEventListener('load', () => {
-      clearTimeout(loadTimeout);
-    });
-  }
 </script>
 
 </body>
